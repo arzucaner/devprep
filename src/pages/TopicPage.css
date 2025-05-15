@@ -1,0 +1,29 @@
+.topic-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.topic-title {
+  color: #2e4754;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.questions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .topic-page {
+    padding: 1rem;
+  }
+  
+  .topic-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+} 
