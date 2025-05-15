@@ -1,0 +1,17 @@
+[
+  {
+    "question": "What is the difference between semantic and non-semantic HTML elements?",
+    "hint": "Consider meaning and accessibility.",
+    "answer": "Semantic elements clearly describe their meaning to both browser and developer (like <header>, <nav>, <article>), while non-semantic elements don't (like <div>, <span>). Semantic HTML improves accessibility, SEO, and code readability."
+  },
+  {
+    "question": "Explain the purpose of the data-* attributes in HTML5.",
+    "hint": "Think about custom data storage.",
+    "answer": "data-* attributes allow you to store custom data private to the page or application. They can be accessed via JavaScript using dataset property and are useful for storing extra information on standard HTML elements."
+  },
+  {
+    "question": "What is the difference between localStorage and sessionStorage?",
+    "hint": "Consider data persistence and scope.",
+    "answer": "localStorage persists data until explicitly deleted, while sessionStorage only keeps data for the duration of the page session. localStorage is shared between all tabs/windows, while sessionStorage is unique to each tab/window."
+  }
+] 

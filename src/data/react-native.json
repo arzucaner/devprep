@@ -1,0 +1,17 @@
+[
+  {
+    "question": "What is the difference between React and React Native?",
+    "hint": "Consider platform-specific rendering and component usage.",
+    "answer": "React is for web development and renders to HTML/CSS, while React Native is for mobile development and renders to native mobile components. React Native uses platform-specific components (like View instead of div) and doesn't use HTML or CSS."
+  },
+  {
+    "question": "Explain the concept of Bridge in React Native.",
+    "hint": "Think about communication between JavaScript and native code.",
+    "answer": "The Bridge in React Native is a communication layer that allows JavaScript code to interact with native platform code. It serializes data between the JavaScript thread and the native thread, though this can sometimes cause performance bottlenecks."
+  },
+  {
+    "question": "What are the main differences between iOS and Android development in React Native?",
+    "hint": "Consider platform-specific APIs and styling.",
+    "answer": "Key differences include platform-specific APIs (like PushNotificationIOS vs Android notifications), different styling behaviors (especially with shadows and elevation), and platform-specific components. React Native provides Platform.select() and platform-specific file extensions (.ios.js, .android.js) to handle these differences."
+  }
+] 

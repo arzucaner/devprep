@@ -1,0 +1,17 @@
+[
+  {
+    "question": "What is a closure in JavaScript?",
+    "hint": "Think about lexical scope and inner functions.",
+    "answer": "A closure is a function that has access to variables from its outer scope, even after the outer function has returned."
+  },
+  {
+    "question": "Explain the concept of hoisting in JavaScript.",
+    "hint": "Consider how variable and function declarations are processed during the compilation phase.",
+    "answer": "Hoisting is JavaScript's behavior of moving declarations to the top of their scope before code execution. Variables declared with var are hoisted and initialized with undefined, while let and const are hoisted but not initialized."
+  },
+  {
+    "question": "What is the difference between == and === in JavaScript?",
+    "hint": "Think about type coercion.",
+    "answer": "== performs type coercion before comparison, while === (strict equality) checks both value and type without coercion. === is generally preferred as it's more predictable and safer."
+  }
+] 

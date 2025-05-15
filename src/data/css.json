@@ -1,0 +1,17 @@
+[
+  {
+    "question": "What is the CSS Box Model?",
+    "hint": "Consider the layers of an element's layout.",
+    "answer": "The CSS Box Model describes how elements are laid out, consisting of content, padding, border, and margin. The total width/height of an element includes all these layers. box-sizing: border-box makes padding and border part of the element's total width/height."
+  },
+  {
+    "question": "Explain the difference between display: flex and display: grid.",
+    "hint": "Think about layout dimensions and use cases.",
+    "answer": "Flexbox is one-dimensional (row or column) and is great for dynamic content and single-axis layouts. Grid is two-dimensional (rows and columns) and is better for complex layouts with both axes. Flexbox is more suitable for component-level layouts, while Grid is better for page-level layouts."
+  },
+  {
+    "question": "What are CSS Custom Properties (variables) and how do you use them?",
+    "hint": "Consider reusability and maintainability.",
+    "answer": "CSS Custom Properties (variables) are defined using --variable-name and accessed using var(--variable-name). They can be scoped to elements and modified with JavaScript. They're useful for maintaining consistent values across a stylesheet and creating themes."
+  }
+] 

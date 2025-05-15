@@ -1,0 +1,17 @@
+[
+  {
+    "question": "What is the Event Loop in Node.js?",
+    "hint": "Consider asynchronous operations and non-blocking I/O.",
+    "answer": "The Event Loop is a mechanism that allows Node.js to perform non-blocking I/O operations despite JavaScript being single-threaded. It continuously checks the call stack and processes events from the event queue, enabling asynchronous operations."
+  },
+  {
+    "question": "Explain the difference between process.nextTick() and setImmediate().",
+    "hint": "Think about the order of execution in the event loop.",
+    "answer": "process.nextTick() executes before the next iteration of the event loop, while setImmediate() executes at the end of the current event loop iteration. process.nextTick() has higher priority and can potentially starve the event loop if used improperly."
+  },
+  {
+    "question": "What is the purpose of the package.json file?",
+    "hint": "Consider project configuration and dependencies.",
+    "answer": "package.json is a manifest file that contains project metadata, dependencies, scripts, and configuration. It helps manage project dependencies, define scripts for common tasks, and share project information with other developers."
+  }
+] 

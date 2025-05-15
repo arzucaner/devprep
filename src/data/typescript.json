@@ -1,0 +1,17 @@
+[
+  {
+    "question": "What are the main benefits of using TypeScript?",
+    "hint": "Consider type safety and development experience.",
+    "answer": "TypeScript provides static typing, better IDE support with autocompletion, early error detection, better code documentation, and improved maintainability. It's a superset of JavaScript that compiles to plain JavaScript."
+  },
+  {
+    "question": "Explain the difference between 'type' and 'interface' in TypeScript.",
+    "hint": "Think about extensibility and declaration merging.",
+    "answer": "Interfaces can be extended and merged, while types cannot. Types are more flexible and can represent unions, intersections, and mapped types. Interfaces are generally preferred for defining object shapes and can be implemented by classes."
+  },
+  {
+    "question": "What are generics in TypeScript and when would you use them?",
+    "hint": "Consider reusable components and type safety.",
+    "answer": "Generics allow you to write flexible, reusable code that works with different types while maintaining type safety. They're useful when creating functions, classes, or interfaces that can work with various data types without losing type information."
+  }
+] 
