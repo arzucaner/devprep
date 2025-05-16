@@ -1,17 +1,182 @@
 [
   {
-    "question": "What is the difference between React and React Native?",
-    "hint": "Consider platform-specific rendering and component usage.",
-    "answer": "React is for web development and renders to HTML/CSS, while React Native is for mobile development and renders to native mobile components. React Native uses platform-specific components (like View instead of div) and doesn't use HTML or CSS."
+    "question": "What is React Native?",
+    "hint": "Think about cross-platform mobile development.",
+    "answer": "React Native is a framework for building native apps using React and JavaScript, targeting both iOS and Android platforms.",
+    "level": "junior"
   },
   {
-    "question": "Explain the concept of Bridge in React Native.",
-    "hint": "Think about communication between JavaScript and native code.",
-    "answer": "The Bridge in React Native is a communication layer that allows JavaScript code to interact with native platform code. It serializes data between the JavaScript thread and the native thread, though this can sometimes cause performance bottlenecks."
+    "question": "How is React Native different from React for the web?",
+    "hint": "Think about platform targets and components.",
+    "answer": "React Native uses native components instead of web components like <div> or <span>, and targets mobile platforms.",
+    "level": "junior"
   },
   {
-    "question": "What are the main differences between iOS and Android development in React Native?",
-    "hint": "Consider platform-specific APIs and styling.",
-    "answer": "Key differences include platform-specific APIs (like PushNotificationIOS vs Android notifications), different styling behaviors (especially with shadows and elevation), and platform-specific components. React Native provides Platform.select() and platform-specific file extensions (.ios.js, .android.js) to handle these differences."
+    "question": "What are some core components of React Native?",
+    "hint": "Think about basic UI building blocks.",
+    "answer": "Core components include View, Text, Image, ScrollView, and TextInput.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the purpose of the 'StyleSheet' API in React Native?",
+    "hint": "Think about styling elements.",
+    "answer": "StyleSheet allows you to define styles in a structured way, improving performance by reducing inline styles.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the difference between Flexbox in React Native and CSS?",
+    "hint": "Think about default axis direction.",
+    "answer": "Flexbox in React Native uses column as the default main axis, unlike row in CSS.",
+    "level": "mid"
+  },
+  {
+    "question": "How does navigation work in React Native?",
+    "hint": "Think about navigating between screens.",
+    "answer": "React Navigation is commonly used to implement stack, tab, and drawer navigators between screens.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the use of FlatList in React Native?",
+    "hint": "Think about large lists and performance.",
+    "answer": "FlatList efficiently renders large lists of data with lazy loading and recycling of views.",
+    "level": "junior"
+  },
+  {
+    "question": "How do you handle touch events in React Native?",
+    "hint": "Think about pressable UI elements.",
+    "answer": "Use components like TouchableOpacity, Pressable, or GestureHandler for handling touch events.",
+    "level": "junior"
+  },
+  {
+    "question": "What are native modules in React Native?",
+    "hint": "Think about bridging native code with JS.",
+    "answer": "Native modules allow interaction between JavaScript and platform-specific native code like Swift, Java, or Objective-C.",
+    "level": "senior"
+  },
+  {
+    "question": "How do you debug a React Native app?",
+    "hint": "Think about tools and options.",
+    "answer": "You can debug using Chrome DevTools, Flipper, React Native Debugger, and in-app console logs.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the role of Metro bundler?",
+    "hint": "Think about asset packaging.",
+    "answer": "Metro is the JavaScript bundler for React Native that transforms and serves code during development.",
+    "level": "mid"
+  },
+  {
+    "question": "How do you handle platform-specific code in React Native?",
+    "hint": "Think about extensions and Platform module.",
+    "answer": "Use Platform module or file extensions like .ios.js and .android.js to write platform-specific logic.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the use of useEffect in React Native?",
+    "hint": "Think about side effects.",
+    "answer": "useEffect is a hook that performs side effects like fetching data or setting up listeners after rendering.",
+    "level": "junior"
+  },
+  {
+    "question": "How do you handle forms and inputs in React Native?",
+    "hint": "Think about TextInput and state.",
+    "answer": "Use TextInput components and manage their state using useState or form libraries like Formik.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between useState and useReducer?",
+    "hint": "Think about state complexity.",
+    "answer": "useState is used for simple state, while useReducer is better for complex state logic or multiple actions.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the purpose of useRef in React Native?",
+    "hint": "Think about accessing DOM-like elements.",
+    "answer": "useRef is used to access component instances, store mutable values, or control focus and animations.",
+    "level": "mid"
+  },
+  {
+    "question": "How do you manage global state in React Native apps?",
+    "hint": "Think about state management tools.",
+    "answer": "You can use Context API, Redux, Zustand, or Recoil to manage global state in React Native.",
+    "level": "senior"
+  },
+  {
+    "question": "How do you optimize performance in React Native?",
+    "hint": "Think about rendering and memory.",
+    "answer": "Use memoization, FlatList optimizations, avoid anonymous functions in render, and reduce re-renders.",
+    "level": "senior"
+  },
+  {
+    "question": "What are animations in React Native and how are they implemented?",
+    "hint": "Think about Animated API.",
+    "answer": "Use the Animated API or libraries like Reanimated to perform performant animations in RN apps.",
+    "level": "mid"
+  },
+  {
+    "question": "How do you access native device features like camera or GPS?",
+    "hint": "Think about libraries and permissions.",
+    "answer": "Use packages like react-native-camera or react-native-geolocation and request necessary permissions.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between controlled and uncontrolled components in React Native?",
+    "hint": "Think about form input state.",
+    "answer": "Controlled components have state managed by React, while uncontrolled ones manage state internally.",
+    "level": "mid"
+  },
+  {
+    "question": "What are the limitations of React Native?",
+    "hint": "Think about performance and native APIs.",
+    "answer": "React Native may lack access to some native APIs, and performance can be limited for complex or graphics-heavy apps.",
+    "level": "senior"
+  },
+  {
+    "question": "How does hot reloading work in React Native?",
+    "hint": "Think about preserving state during development.",
+    "answer": "Hot reloading updates code in place without losing component state, improving development speed.",
+    "level": "mid"
+  },
+  {
+    "question": "How can you deploy a React Native app to the App Store or Google Play?",
+    "hint": "Think about build tools and signing.",
+    "answer": "Build signed release versions, configure native files, and use Xcode/Android Studio or CLI for submission.",
+    "level": "senior"
+  },
+  {
+    "question": "How do you use third-party native libraries in React Native?",
+    "hint": "Think about linking and bridging.",
+    "answer": "Install the package and use autolinking or manual linking with native code changes and permissions.",
+    "level": "senior"
+  },
+  {
+    "question": "What is code push in React Native?",
+    "hint": "Think about OTA updates.",
+    "answer": "CodePush allows you to deploy JS updates over-the-air without going through app store approval.",
+    "level": "senior"
+  },
+  {
+    "question": "What is React Native CLI and how is it different from Expo?",
+    "hint": "Think about flexibility and native code.",
+    "answer": "CLI provides full control with native code access, while Expo simplifies setup but limits native customizations.",
+    "level": "mid"
+  },
+  {
+    "question": "How do you handle deep linking in React Native?",
+    "hint": "Think about navigation and URLs.",
+    "answer": "Use libraries like React Navigation and configure URL schemes or intents for handling links.",
+    "level": "senior"
+  },
+  {
+    "question": "What are app permissions and how do you manage them?",
+    "hint": "Think about privacy features.",
+    "answer": "Permissions control access to device features; use request APIs and handle permission states appropriately.",
+    "level": "mid"
+  },
+  {
+    "question": "How would you architect a scalable React Native project?",
+    "hint": "Think about folder structure and reusability.",
+    "answer": "Use feature-based structure, separate logic/UI/hooks/services, apply state management, and modular components.",
+    "level": "lead"
   }
-] 
+]

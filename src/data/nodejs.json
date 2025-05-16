@@ -1,17 +1,182 @@
 [
   {
-    "question": "What is the Event Loop in Node.js?",
-    "hint": "Consider asynchronous operations and non-blocking I/O.",
-    "answer": "The Event Loop is a mechanism that allows Node.js to perform non-blocking I/O operations despite JavaScript being single-threaded. It continuously checks the call stack and processes events from the event queue, enabling asynchronous operations."
+    "question": "What is Node.js?",
+    "hint": "Think about JavaScript on the server.",
+    "answer": "Node.js is a runtime environment that allows JavaScript to be run on the server side using Google's V8 engine.",
+    "level": "junior"
   },
   {
-    "question": "Explain the difference between process.nextTick() and setImmediate().",
-    "hint": "Think about the order of execution in the event loop.",
-    "answer": "process.nextTick() executes before the next iteration of the event loop, while setImmediate() executes at the end of the current event loop iteration. process.nextTick() has higher priority and can potentially starve the event loop if used improperly."
+    "question": "What is the difference between Node.js and browser JavaScript?",
+    "hint": "Consider environment and APIs.",
+    "answer": "Node.js runs on the server and includes APIs for file system and network, whereas browser JS runs in the client and manipulates the DOM.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the role of the event loop in Node.js?",
+    "hint": "Think about async behavior.",
+    "answer": "The event loop enables non-blocking I/O by offloading operations and running callbacks when operations are complete.",
+    "level": "mid"
+  },
+  {
+    "question": "What are streams in Node.js?",
+    "hint": "Think about processing data chunks.",
+    "answer": "Streams are objects that enable reading or writing data in chunks rather than all at once, improving performance for large data.",
+    "level": "mid"
   },
   {
     "question": "What is the purpose of the package.json file?",
-    "hint": "Consider project configuration and dependencies.",
-    "answer": "package.json is a manifest file that contains project metadata, dependencies, scripts, and configuration. It helps manage project dependencies, define scripts for common tasks, and share project information with other developers."
+    "hint": "Think about dependencies and metadata.",
+    "answer": "package.json holds metadata about the project including dependencies, scripts, and configuration details.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the difference between require() and import?",
+    "hint": "Consider CommonJS vs ES Modules.",
+    "answer": "require() is used in CommonJS (Node.js default), while import is used in ES Modules with newer syntax and support.",
+    "level": "mid"
+  },
+  {
+    "question": "What is middleware in Express.js?",
+    "hint": "Think about request/response processing.",
+    "answer": "Middleware functions are executed during the request lifecycle to modify req/res objects or end the cycle.",
+    "level": "mid"
+  },
+  {
+    "question": "What is a callback function in Node.js?",
+    "hint": "Think about async execution.",
+    "answer": "A callback is a function passed to another function that runs after the task is completed, commonly used in asynchronous code.",
+    "level": "junior"
+  },
+  {
+    "question": "What are environment variables in Node.js?",
+    "hint": "Think about configuration.",
+    "answer": "Environment variables are external values (stored in process.env) used for configuration and security, like API keys or DB URLs.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the role of the buffer class in Node.js?",
+    "hint": "Think about binary data.",
+    "answer": "Buffer is used to handle binary data streams in Node.js, especially when working with TCP streams or file systems.",
+    "level": "mid"
+  },
+  {
+    "question": "How do you handle exceptions in Node.js?",
+    "hint": "Think about try-catch and event handlers.",
+    "answer": "Use try-catch for synchronous code and error-first callbacks or .catch() for async. Listen for 'error' events where needed.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the cluster module in Node.js?",
+    "hint": "Think about multi-core utilization.",
+    "answer": "Cluster allows Node.js to create child processes to handle load, enabling better CPU utilization in multi-core systems.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between process.nextTick() and setImmediate()?",
+    "hint": "Think about event loop phases.",
+    "answer": "process.nextTick() runs before the next event loop iteration, setImmediate() runs on the next iteration of the event loop.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the purpose of nodemon?",
+    "hint": "Think about development productivity.",
+    "answer": "Nodemon automatically restarts your Node.js application when file changes in the directory are detected.",
+    "level": "junior"
+  },
+  {
+    "question": "What is a memory leak and how do you prevent it in Node.js?",
+    "hint": "Think about unused references.",
+    "answer": "A memory leak happens when memory is no longer used but not released. Avoid by clearing timers, unreferencing objects, and profiling.",
+    "level": "senior"
+  },
+  {
+    "question": "How does async/await improve asynchronous code in Node.js?",
+    "hint": "Think about readability and structure.",
+    "answer": "async/await makes asynchronous code easier to read and maintain by allowing synchronous-like syntax for promises.",
+    "level": "mid"
+  },
+  {
+    "question": "What are child processes in Node.js?",
+    "hint": "Think about running external commands.",
+    "answer": "Child processes allow you to spawn new processes to execute commands or scripts concurrently.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between fork() and spawn()?",
+    "hint": "Think about execution context.",
+    "answer": "spawn launches a new process, fork is a special case that runs a new Node.js instance and communicates via IPC.",
+    "level": "senior"
+  },
+  {
+    "question": "What is CORS and how do you enable it in Express.js?",
+    "hint": "Think about cross-origin requests.",
+    "answer": "CORS allows or restricts resources on a web server depending on the origin. Use the 'cors' middleware to enable it in Express.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between synchronous and asynchronous functions in Node.js?",
+    "hint": "Think about blocking behavior.",
+    "answer": "Synchronous functions block execution until completed, while asynchronous functions run in the background and don't block the event loop.",
+    "level": "junior"
+  },
+  {
+    "question": "How do you connect Node.js to a database like MongoDB?",
+    "hint": "Think about drivers and ODMs.",
+    "answer": "Use the official MongoDB driver or Mongoose ODM to connect and interact with MongoDB databases.",
+    "level": "junior"
+  },
+  {
+    "question": "What is an event emitter in Node.js?",
+    "hint": "Think about custom events.",
+    "answer": "An EventEmitter allows you to create, fire, and listen to custom events in Node.js applications.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between app.use() and app.get() in Express?",
+    "hint": "Think about middleware vs route handling.",
+    "answer": "app.use() mounts middleware, while app.get() defines a route handler for GET requests.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the 'require' cache and how can it affect your app?",
+    "hint": "Think about module reusability.",
+    "answer": "Node caches modules after the first require, so subsequent requires return the cached object. This can cause unexpected shared state.",
+    "level": "senior"
+  },
+  {
+    "question": "How do you secure a Node.js application?",
+    "hint": "Think about input validation, headers, and dependencies.",
+    "answer": "Use input validation, sanitize user data, enable HTTP security headers, and keep dependencies updated.",
+    "level": "lead"
+  },
+  {
+    "question": "What are common use cases for global objects in Node.js?",
+    "hint": "Think about objects like __dirname or process.",
+    "answer": "Global objects provide access to runtime info like __dirname, __filename, setTimeout, process, and console.",
+    "level": "junior"
+  },
+  {
+    "question": "How do you test Node.js applications?",
+    "hint": "Think about frameworks and practices.",
+    "answer": "Use testing frameworks like Mocha, Jest, or AVA. Write unit tests, integration tests, and use mocks and assertions.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between hard and soft dependencies in package.json?",
+    "hint": "Think about dependency types.",
+    "answer": "Dependencies are needed at runtime (dependencies), devDependencies are used during development and testing only.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the role of the 'exports' field in package.json?",
+    "hint": "Think about restricting module entry points.",
+    "answer": "'exports' defines which files a package exposes as entry points for importing.",
+    "level": "lead"
+  },
+  {
+    "question": "How would you scale a Node.js app in production?",
+    "hint": "Think about load balancing and clustering.",
+    "answer": "Use clustering, load balancers, containerization (Docker), and tools like PM2 or Kubernetes for horizontal scaling.",
+    "level": "lead"
   }
-] 
+]

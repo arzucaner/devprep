@@ -1,17 +1,188 @@
 [
   {
-    "question": "What are React Hooks and why were they introduced?",
-    "hint": "Consider the limitations of class components and lifecycle methods.",
-    "answer": "React Hooks are functions that let you use state and other React features in functional components. They were introduced to solve problems with class components, such as complex logic reuse, confusing this binding, and hard-to-understand lifecycle methods."
+    "question": "What is React and what are its key features?",
+    "hint": "Consider component-based architecture and virtual DOM.",
+    "answer": "React is a JavaScript library for building user interfaces. Key features include component-based architecture, virtual DOM for efficient rendering, and unidirectional data flow.",
+    "level": "junior"
   },
   {
-    "question": "Explain the Virtual DOM in React.",
-    "hint": "Think about performance optimization and DOM manipulation.",
-    "answer": "The Virtual DOM is a lightweight copy of the actual DOM. React uses it to improve performance by comparing the Virtual DOM with the real DOM and only updating what's necessary. This process is called reconciliation."
+    "question": "Explain the difference between props and state in React.",
+    "hint": "Think about data flow and mutability.",
+    "answer": "Props are read-only and passed from parent to child components, while state is managed within the component and can change over time.",
+    "level": "junior"
+  },
+  {
+    "question": "What is JSX in React?",
+    "hint": "Consider syntax extension for JavaScript.",
+    "answer": "JSX is a syntax extension that allows writing HTML-like code within JavaScript, making it easier to create React elements.",
+    "level": "junior"
+  },
+  {
+    "question": "How does the virtual DOM work in React?",
+    "hint": "Think about performance optimization.",
+    "answer": "The virtual DOM is a lightweight copy of the real DOM. React updates the virtual DOM first, then efficiently updates the real DOM by comparing differences.",
+    "level": "junior"
+  },
+  {
+    "question": "What are React Hooks and why were they introduced?",
+    "hint": "Consider functional components and state management.",
+    "answer": "React Hooks are functions that let you use state and other React features in functional components, introduced to simplify code and avoid class components.",
+    "level": "mid"
+  },
+  {
+    "question": "Explain the useEffect Hook in React.",
+    "hint": "Think about side effects in functional components.",
+    "answer": "useEffect is a Hook that lets you perform side effects in functional components, such as data fetching or manual DOM manipulation.",
+    "level": "mid"
   },
   {
     "question": "What is the difference between controlled and uncontrolled components?",
-    "hint": "Consider form handling and state management.",
-    "answer": "Controlled components have their form data handled by React state, while uncontrolled components let the DOM handle the form data internally. Controlled components provide more control and validation, while uncontrolled components can be simpler for basic use cases."
+    "hint": "Consider form data handling.",
+    "answer": "Controlled components have their form data managed by React state, while uncontrolled components rely on the DOM to manage form data.",
+    "level": "mid"
+  },
+  {
+    "question": "How do you optimize performance in a React application?",
+    "hint": "Think about memoization and code splitting.",
+    "answer": "Performance can be optimized using techniques like React.memo, useMemo, useCallback, lazy loading, and code splitting.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the purpose of keys in React lists?",
+    "hint": "Consider list rendering and reconciliation.",
+    "answer": "Keys help React identify which items have changed, are added, or are removed, improving the efficiency of list rendering.",
+    "level": "mid"
+  },
+  {
+    "question": "Explain the context API in React.",
+    "hint": "Think about prop drilling and global state.",
+    "answer": "The context API allows for sharing values like themes or user data between components without passing props manually at every level.",
+    "level": "mid"
+  },
+  {
+    "question": "What are higher-order components (HOC) in React?",
+    "hint": "Consider component reusability.",
+    "answer": "A higher-order component is a function that takes a component and returns a new component, enhancing it with additional functionality.",
+    "level": "senior"
+  },
+  {
+    "question": "How does React handle reconciliation?",
+    "hint": "Think about virtual DOM comparison.",
+    "answer": "Reconciliation is the process of comparing the new virtual DOM with the previous one and updating the real DOM with minimal operations.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between useMemo and useCallback?",
+    "hint": "Consider memoization of values and functions.",
+    "answer": "useMemo memoizes the result of a computation, while useCallback memoizes the function itself to prevent unnecessary re-renders.",
+    "level": "senior"
+  },
+  {
+    "question": "Explain the concept of code splitting in React.",
+    "hint": "Think about dynamic imports and performance.",
+    "answer": "Code splitting involves breaking up the code into smaller chunks that can be loaded on demand, improving initial load times.",
+    "level": "senior"
+  },
+  {
+    "question": "How do you handle error boundaries in React?",
+    "hint": "Consider class components and lifecycle methods.",
+    "answer": "Error boundaries are React components that catch JavaScript errors in their child component tree and display a fallback UI.",
+    "level": "senior"
+  },
+  {
+    "question": "What is server-side rendering (SSR) in React?",
+    "hint": "Think about rendering on the server vs. client.",
+    "answer": "SSR is the process of rendering React components on the server and sending the HTML to the client, improving performance and SEO.",
+    "level": "senior"
+  },
+  {
+    "question": "How do you manage state in large-scale React applications?",
+    "hint": "Consider state management libraries.",
+    "answer": "State can be managed using libraries like Redux, MobX, or the Context API, depending on the complexity and requirements of the application.",
+    "level": "lead"
+  },
+  {
+    "question": "What is the difference between Redux and Context API?",
+    "hint": "Consider use cases and scalability.",
+    "answer": "Redux is a state management library suitable for complex applications with large state, while Context API is built into React and better for simpler use cases.",
+    "level": "lead"
+  },
+  {
+    "question": "How do you ensure code quality in a React project?",
+    "hint": "Think about testing and linting.",
+    "answer": "Ensuring code quality involves writing unit and integration tests, using linters like ESLint, and adhering to coding standards and best practices.",
+    "level": "lead"
+  },
+  {
+    "question": "Explain the concept of lazy loading in React.",
+    "hint": "Consider dynamic imports and performance.",
+    "answer": "Lazy loading is a technique where components are loaded only when needed, reducing the initial load time of the application.",
+    "level": "lead"
+  },
+  {
+    "question": "What are React Portals and when would you use them?",
+    "hint": "Think about rendering outside the parent DOM hierarchy.",
+    "answer": "React Portals allow rendering components outside their parent DOM hierarchy, useful for modals, tooltips, and overlays.",
+    "level": "lead"
+  },
+  {
+    "question": "How does React's reconciliation algorithm work?",
+    "hint": "Consider diffing and updating the DOM.",
+    "answer": "React's reconciliation algorithm compares the new virtual DOM with the previous one and updates only the parts of the real DOM that have changed.",
+    "level": "lead"
+  },
+  {
+    "question": "What is the significance of the key prop in React?",
+    "hint": "Think about list rendering and performance.",
+    "answer": "The key prop helps React identify which items have changed, are added, or are removed, optimizing the rendering process.",
+    "level": "junior"
+  },
+  {
+    "question": "How do you handle forms in React?",
+    "hint": "Consider controlled components and state management.",
+    "answer": "Forms in React are handled using controlled components, where form data is managed by React state, allowing for validation and control.",
+    "level": "junior"
+  },
+  {
+    "question": "What is prop drilling and how can it be avoided?",
+    "hint": "Think about passing props through multiple components.",
+    "answer": "Prop drilling is the process of passing props through multiple components. It can be avoided using the Context API or state management libraries.",
+    "level": "mid"
+  },
+  {
+    "question": "Explain the use of useRef Hook in React.",
+    "hint": "Consider accessing DOM elements directly.",
+    "answer": "useRef returns a mutable ref object that can be used to access DOM elements directly or store mutable values that persist across renders.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between class components and functional components?",
+    "hint": "Consider syntax and state management.",
+    "answer": "Class components use ES6 classes and can have state and lifecycle methods, while functional components are simpler and use Hooks for state and side effects.",
+    "level": "junior"
+  },
+  {
+    "question": "How do you handle side effects in React?",
+    "hint": "Think about the useEffect Hook.",
+    "answer": "Side effects in React are handled using the useEffect Hook, which allows performing actions like data fetching or manual DOM manipulation.",
+    "level": "mid"
+  },
+  {
+    "question": "What are Pure Components in React?",
+    "hint": "Consider performance optimization.",
+    "answer": "Pure Components are components that only re-render when their props or state change, helping to optimize performance by preventing unnecessary renders.",
+    "level": "senior"
+  },
+  {
+    "question": "How do you implement routing in a React application?",
+    "hint": "Consider React Router.",
+    "answer": "Routing in React is implemented using libraries like React Router, which allows defining routes and navigating between different components.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the significance of the useCallback Hook?",
+    "hint": "Consider function memoization.",
+    "answer": "useCallback returns a memoized version of a callback function, preventing unnecessary re-creations of the function on re-renders.",
+    "level": "mid"
   }
-] 
+]

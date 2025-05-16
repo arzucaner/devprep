@@ -1,10 +1,10 @@
 import React, { useState, useCallback } from 'react';
 import AccordionQuestion from '../components/AccordionQuestion';
 import RoleFilter from '../components/RoleFilter';
-import questions from '../data/react.json';
+import questions from '../data/node.json';
 import '../pages/TopicPage.css';
 
-const ReactPage = () => {
+const NodePage = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedLevel, setSelectedLevel] = useState('');
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -21,7 +21,7 @@ const ReactPage = () => {
 
   return (
     <div className="topic-page">
-      <h1 className="topic-title">React Interview Questions</h1>
+      <h1 className="topic-title">Node.js Interview Questions</h1>
       
       <div className="filters-section">
         <RoleFilter
@@ -32,7 +32,7 @@ const ReactPage = () => {
           <input
             type="text"
             className="search-input"
-            placeholder="Search React questions..."
+            placeholder="Search Node.js questions..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
@@ -65,4 +65,4 @@ const ReactPage = () => {
   );
 };
 
-export default ReactPage; 
+export default NodePage; 

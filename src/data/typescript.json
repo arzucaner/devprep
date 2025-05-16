@@ -1,17 +1,188 @@
 [
   {
-    "question": "What are the main benefits of using TypeScript?",
-    "hint": "Consider type safety and development experience.",
-    "answer": "TypeScript provides static typing, better IDE support with autocompletion, early error detection, better code documentation, and improved maintainability. It's a superset of JavaScript that compiles to plain JavaScript."
+    "question": "What is TypeScript and how is it different from JavaScript?",
+    "hint": "Think about static typing and compilation.",
+    "answer": "TypeScript is a superset of JavaScript that adds static type checking and must be compiled to JavaScript before execution.",
+    "level": "junior"
   },
   {
-    "question": "Explain the difference between 'type' and 'interface' in TypeScript.",
-    "hint": "Think about extensibility and declaration merging.",
-    "answer": "Interfaces can be extended and merged, while types cannot. Types are more flexible and can represent unions, intersections, and mapped types. Interfaces are generally preferred for defining object shapes and can be implemented by classes."
+    "question": "How do you define a variable with a specific type in TypeScript?",
+    "hint": "Think about using colons.",
+    "answer": "You define it like `let name: string = 'John';`, where `string` is the type annotation.",
+    "level": "junior"
   },
   {
-    "question": "What are generics in TypeScript and when would you use them?",
-    "hint": "Consider reusable components and type safety.",
-    "answer": "Generics allow you to write flexible, reusable code that works with different types while maintaining type safety. They're useful when creating functions, classes, or interfaces that can work with various data types without losing type information."
+    "question": "What are interfaces in TypeScript?",
+    "hint": "Think about object shapes.",
+    "answer": "Interfaces define the structure of an object, specifying property names and types without implementing them.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the difference between 'any' and 'unknown' types?",
+    "hint": "Think about type safety.",
+    "answer": "'any' disables type checking, while 'unknown' is safer and requires type checking before use.",
+    "level": "mid"
+  },
+  {
+    "question": "What is a tuple in TypeScript?",
+    "hint": "Think about fixed-length arrays with specific types.",
+    "answer": "A tuple is a fixed-size array where each element has a known type, e.g., [string, number].",
+    "level": "junior"
+  },
+  {
+    "question": "What are enums in TypeScript?",
+    "hint": "Think about a set of named constants.",
+    "answer": "Enums allow you to define a set of named constants for better code readability and intent.",
+    "level": "junior"
+  },
+  {
+    "question": "What are generics in TypeScript?",
+    "hint": "Think about reusable and type-safe components.",
+    "answer": "Generics allow writing functions, classes, or interfaces that work with different data types while maintaining type safety.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the 'never' type in TypeScript?",
+    "hint": "Think about unreachable code or errors.",
+    "answer": "'never' represents values that never occur, like functions that throw errors or infinite loops.",
+    "level": "mid"
+  },
+  {
+    "question": "How do you use union types in TypeScript?",
+    "hint": "Think about allowing multiple types.",
+    "answer": "Union types are used with the `|` symbol, like `number | string`, allowing a value to be either type.",
+    "level": "mid"
+  },
+  {
+    "question": "What is type inference in TypeScript?",
+    "hint": "Think about types without annotations.",
+    "answer": "TypeScript can automatically infer the type of a variable from its initial value, reducing the need for explicit annotations.",
+    "level": "junior"
+  },
+  {
+    "question": "How do you create a readonly property in TypeScript?",
+    "hint": "Think about immutability.",
+    "answer": "Use the `readonly` modifier, e.g., `readonly id: number;`.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the difference between interface and type in TypeScript?",
+    "hint": "Think about extensibility.",
+    "answer": "Both can define object shapes, but interfaces can be extended and merged, while types are more flexible with unions and intersections.",
+    "level": "mid"
+  },
+  {
+    "question": "What is type assertion in TypeScript?",
+    "hint": "Think about telling the compiler a more specific type.",
+    "answer": "Type assertion allows you to override inferred types, e.g., `value as string` or `<string>value`.",
+    "level": "mid"
+  },
+  {
+    "question": "How do you define optional properties in TypeScript?",
+    "hint": "Think about using question marks.",
+    "answer": "Add a `?` after the property name: `name?: string`.",
+    "level": "junior"
+  },
+  {
+    "question": "What is a mapped type in TypeScript?",
+    "hint": "Think about transforming property types.",
+    "answer": "Mapped types allow creating new types by transforming properties of an existing type using `in` and `keyof`.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the 'keyof' operator in TypeScript?",
+    "hint": "Think about extracting keys from a type.",
+    "answer": "'keyof' returns a union of property names for a given type.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the purpose of the 'as const' assertion?",
+    "hint": "Think about readonly literals.",
+    "answer": "'as const' tells the compiler to infer the narrowest (most literal) type, making the value immutable.",
+    "level": "mid"
+  },
+  {
+    "question": "What is declaration merging in TypeScript?",
+    "hint": "Think about combining multiple declarations.",
+    "answer": "Declaration merging allows multiple declarations (e.g., interfaces) with the same name to be combined into one.",
+    "level": "senior"
+  },
+  {
+    "question": "How do you use conditional types in TypeScript?",
+    "hint": "Think about types that depend on a condition.",
+    "answer": "Conditional types use syntax like `T extends U ? X : Y` to return different types based on a condition.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between 'interface' and 'abstract class'?",
+    "hint": "Think about structure vs implementation.",
+    "answer": "Interfaces define structure without implementation; abstract classes can include both structure and implementation.",
+    "level": "senior"
+  },
+  {
+    "question": "How do you handle third-party JavaScript libraries in TypeScript?",
+    "hint": "Think about type definitions.",
+    "answer": "Use DefinitelyTyped types via `@types/` packages or declare custom types using declaration files.",
+    "level": "senior"
+  },
+  {
+    "question": "What is a discriminated union?",
+    "hint": "Think about tagged union types.",
+    "answer": "Discriminated unions combine union types with a common literal property to narrow the type using control flow.",
+    "level": "senior"
+  },
+  {
+    "question": "What are utility types in TypeScript?",
+    "hint": "Think about Partial, Pick, Omit, etc.",
+    "answer": "Utility types help manipulate existing types, such as making properties optional, selecting or omitting keys.",
+    "level": "mid"
+  },
+  {
+    "question": "How do you enforce immutability in TypeScript?",
+    "hint": "Think about readonly and const.",
+    "answer": "Use `readonly` for properties and `as const` for literals to prevent reassignment or mutation.",
+    "level": "mid"
+  },
+  {
+    "question": "How can you restrict a function parameter to specific strings?",
+    "hint": "Think about literal union types.",
+    "answer": "Use union of literals, e.g., `type Status = 'pending' | 'complete';`.",
+    "level": "junior"
+  },
+  {
+    "question": "How do you make a property optional and nullable?",
+    "hint": "Combine two techniques.",
+    "answer": "Use `prop?: string | null` to allow both undefined and null values.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the use of 'infer' in conditional types?",
+    "hint": "Think about extracting types.",
+    "answer": "The `infer` keyword lets you declare a type variable inside a conditional type, used to extract part of a type.",
+    "level": "senior"
+  },
+  {
+    "question": "How do you define a function type in TypeScript?",
+    "hint": "Think about parameter and return types.",
+    "answer": "Use syntax like `(x: number, y: number) => number`.",
+    "level": "junior"
+  },
+  {
+    "question": "What is a type guard in TypeScript?",
+    "hint": "Think about narrowing types.",
+    "answer": "Type guards are functions or expressions that check the type of a variable, narrowing its type in a code block.",
+    "level": "mid"
+  },
+  {
+    "question": "What are ambient declarations?",
+    "hint": "Think about global types for JS files.",
+    "answer": "Ambient declarations describe external libraries or global variables, typically using `declare` keyword.",
+    "level": "lead"
+  },
+  {
+    "question": "How would you structure a large-scale TypeScript project?",
+    "hint": "Think about modularity and scalability.",
+    "answer": "Use separate modules, enforce type safety across layers, organize interfaces/types logically, and apply strict compiler options.",
+    "level": "lead"
   }
-] 
+]

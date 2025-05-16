@@ -1,17 +1,182 @@
 [
   {
-    "question": "What is a closure in JavaScript?",
-    "hint": "Think about lexical scope and inner functions.",
-    "answer": "A closure is a function that has access to variables from its outer scope, even after the outer function has returned."
+    "question": "What is hoisting in JavaScript?",
+    "hint": "Consider variable and function declarations.",
+    "answer": "Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope.",
+    "level": "junior"
   },
   {
-    "question": "Explain the concept of hoisting in JavaScript.",
-    "hint": "Consider how variable and function declarations are processed during the compilation phase.",
-    "answer": "Hoisting is JavaScript's behavior of moving declarations to the top of their scope before code execution. Variables declared with var are hoisted and initialized with undefined, while let and const are hoisted but not initialized."
-  },
-  {
-    "question": "What is the difference between == and === in JavaScript?",
+    "question": "Explain the difference between '==' and '===' operators.",
     "hint": "Think about type coercion.",
-    "answer": "== performs type coercion before comparison, while === (strict equality) checks both value and type without coercion. === is generally preferred as it's more predictable and safer."
+    "answer": "'==' compares values after type coercion, while '===' compares both value and type without coercion.",
+    "level": "junior"
+  },
+  {
+    "question": "What are closures in JavaScript?",
+    "hint": "Consider functions retaining access to their lexical scope.",
+    "answer": "A closure is a function that retains access to its outer scope even after the outer function has returned.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the event loop in JavaScript?",
+    "hint": "Think about asynchronous operations and the call stack.",
+    "answer": "The event loop is a mechanism that handles asynchronous callbacks by placing them in a queue and executing them after the call stack is empty.",
+    "level": "mid"
+  },
+  {
+    "question": "Explain prototypal inheritance in JavaScript.",
+    "hint": "Consider objects inheriting from other objects.",
+    "answer": "Prototypal inheritance allows objects to inherit properties and methods from other objects via the prototype chain.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between 'null' and 'undefined'?",
+    "hint": "Think about variable initialization.",
+    "answer": "'undefined' means a variable has been declared but not assigned a value, while 'null' is an assignment value that represents no value.",
+    "level": "junior"
+  },
+  {
+    "question": "How does the 'this' keyword work in JavaScript?",
+    "hint": "Consider function context.",
+    "answer": "'this' refers to the object that is executing the current function, and its value depends on how the function is called.",
+    "level": "mid"
+  },
+  {
+    "question": "What are arrow functions and how do they differ from regular functions?",
+    "hint": "Think about syntax and 'this' binding.",
+    "answer": "Arrow functions have a shorter syntax and do not have their own 'this'; they inherit 'this' from the parent scope.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the purpose of the 'use strict' directive?",
+    "hint": "Consider stricter parsing and error handling.",
+    "answer": "'use strict' enforces stricter parsing and error handling in your JavaScript code, helping to catch common coding mistakes.",
+    "level": "mid"
+  },
+  {
+    "question": "Explain the concept of promises in JavaScript.",
+    "hint": "Think about asynchronous operations.",
+    "answer": "A promise is an object representing the eventual completion or failure of an asynchronous operation.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between synchronous and asynchronous code?",
+    "hint": "Consider blocking and non-blocking operations.",
+    "answer": "Synchronous code executes sequentially, blocking the thread, while asynchronous code allows other operations to continue before completing.",
+    "level": "junior"
+  },
+  {
+    "question": "How can you handle errors in JavaScript?",
+    "hint": "Think about try-catch blocks.",
+    "answer": "Errors can be handled using try-catch blocks, which allow you to catch exceptions and handle them gracefully.",
+    "level": "junior"
+  },
+  {
+    "question": "What is event delegation in JavaScript?",
+    "hint": "Consider handling events efficiently.",
+    "answer": "Event delegation involves attaching a single event listener to a parent element to manage events for its child elements.",
+    "level": "senior"
+  },
+  {
+    "question": "Explain the concept of debouncing in JavaScript.",
+    "hint": "Think about limiting function execution.",
+    "answer": "Debouncing ensures that a function is not called too frequently by delaying its execution until a certain time has passed since the last call.",
+    "level": "senior"
+  },
+  {
+    "question": "What are generators in JavaScript?",
+    "hint": "Consider functions that can be paused.",
+    "answer": "Generators are functions that can be paused and resumed, allowing you to control the flow of execution using the 'yield' keyword.",
+    "level": "senior"
+  },
+  {
+    "question": "How does the 'async/await' syntax work in JavaScript?",
+    "hint": "Think about simplifying asynchronous code.",
+    "answer": "'async/await' allows you to write asynchronous code that looks synchronous, making it easier to read and maintain.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between 'var', 'let', and 'const'?",
+    "hint": "Consider scope and reassignment.",
+    "answer": "'var' is function-scoped and can be redeclared; 'let' is block-scoped and can be reassigned; 'const' is block-scoped and cannot be reassigned.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the purpose of the 'bind' method in JavaScript?",
+    "hint": "Think about setting the 'this' context.",
+    "answer": "The 'bind' method creates a new function with a specified 'this' value, allowing you to control the context in which a function is executed.",
+    "level": "mid"
+  },
+  {
+    "question": "How do you clone an object in JavaScript?",
+    "hint": "Consider shallow and deep copies.",
+    "answer": "You can clone an object using Object.assign() for shallow copies or structured cloning for deep copies.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between 'call', 'apply', and 'bind'?",
+    "hint": "Think about function invocation and context.",
+    "answer": "'call' and 'apply' invoke functions immediately with a specified 'this' context; 'bind' returns a new function with the bound context.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the purpose of the 'Symbol' type in JavaScript?",
+    "hint": "Consider unique identifiers.",
+    "answer": "Symbols are unique and immutable data types used to create unique property keys, avoiding name collisions.",
+    "level": "senior"
+  },
+  {
+    "question": "How do you handle memory leaks in JavaScript?",
+    "hint": "Consider garbage collection and references.",
+    "answer": "Memory leaks can be handled by removing unnecessary references, using weak references, and ensuring proper event listener cleanup.",
+    "level": "lead"
+  },
+  {
+    "question": "What are service workers in JavaScript?",
+    "hint": "Think about background scripts.",
+    "answer": "Service workers are scripts that run in the background, enabling features like offline support and push notifications.",
+    "level": "lead"
+  },
+  {
+    "question": "Explain the concept of currying in JavaScript.",
+    "hint": "Consider transforming functions.",
+    "answer": "Currying is the process of transforming a function with multiple arguments into a sequence of functions, each taking a single argument.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between shallow and deep copying of objects?",
+    "hint": "Consider nested objects.",
+    "answer": "Shallow copying duplicates only the top-level properties, while deep copying duplicates all nested objects as well.",
+    "level": "mid"
+  },
+  {
+    "question": "How do you prevent default behavior in event handling?",
+    "hint": "Think about event methods.",
+    "answer": "You can prevent default behavior by calling 'event.preventDefault()' within the event handler.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the purpose of the 'setTimeout' function?",
+    "hint": "Consider delayed execution.",
+    "answer": "'setTimeout' schedules a function to be executed after a specified delay in milliseconds.",
+    "level": "junior"
+  },
+  {
+    "question": "Explain the concept of the call stack in JavaScript.",
+    "hint": "Think about function execution order.",
+    "answer": "The call stack is a data structure that keeps track of function calls, determining the execution order in JavaScript.",
+    "level": "mid"
+  },
+  {
+    "question": "What are modules in JavaScript?",
+    "hint": "Consider code organization.",
+    "answer": "Modules allow you to encapsulate code into reusable pieces, promoting better organization and maintainability.",
+    "level": "mid"
+  },
+  {
+    "question": "How do you handle asynchronous errors in JavaScript?",
+    "hint": "Consider promise rejection and try-catch.",
+    "answer": "Asynchronous errors can be handled using '.catch()' for promises or try-catch blocks within async functions.",
+    "level": "mid"
   }
-] 
+]
