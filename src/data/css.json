@@ -1,17 +1,188 @@
 [
   {
-    "question": "What is the CSS Box Model?",
-    "hint": "Consider the layers of an element's layout.",
-    "answer": "The CSS Box Model describes how elements are laid out, consisting of content, padding, border, and margin. The total width/height of an element includes all these layers. box-sizing: border-box makes padding and border part of the element's total width/height."
+    "question": "What is the difference between classes and IDs in CSS?",
+    "hint": "Think about uniqueness and reusability.",
+    "answer": "Classes can be used on multiple elements, while IDs should be unique to a single element on the page.",
+    "level": "junior"
   },
   {
-    "question": "Explain the difference between display: flex and display: grid.",
-    "hint": "Think about layout dimensions and use cases.",
-    "answer": "Flexbox is one-dimensional (row or column) and is great for dynamic content and single-axis layouts. Grid is two-dimensional (rows and columns) and is better for complex layouts with both axes. Flexbox is more suitable for component-level layouts, while Grid is better for page-level layouts."
+    "question": "What does the box model in CSS consist of?",
+    "hint": "Think about content layout structure.",
+    "answer": "The box model includes content, padding, border, and margin.",
+    "level": "junior"
   },
   {
-    "question": "What are CSS Custom Properties (variables) and how do you use them?",
-    "hint": "Consider reusability and maintainability.",
-    "answer": "CSS Custom Properties (variables) are defined using --variable-name and accessed using var(--variable-name). They can be scoped to elements and modified with JavaScript. They're useful for maintaining consistent values across a stylesheet and creating themes."
+    "question": "How do you include CSS in a web page?",
+    "hint": "Think about different methods.",
+    "answer": "You can use inline styles, internal <style> tags, or external .css files linked with <link>.",
+    "level": "junior"
+  },
+  {
+    "question": "What is specificity in CSS?",
+    "hint": "Consider rule conflicts.",
+    "answer": "Specificity determines which CSS rule is applied when multiple rules match the same element.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the difference between relative, absolute, and fixed positioning in CSS?",
+    "hint": "Think about how elements are placed relative to different origins.",
+    "answer": "Relative is based on its normal position, absolute is based on the nearest positioned ancestor, and fixed is relative to the viewport.",
+    "level": "mid"
+  },
+  {
+    "question": "How does Flexbox work in CSS?",
+    "hint": "Consider axis-based layout.",
+    "answer": "Flexbox is a layout model that allows elements to align and distribute space within a container using main and cross axes.",
+    "level": "mid"
+  },
+  {
+    "question": "What are pseudo-classes in CSS?",
+    "hint": "Think about :hover, :first-child, etc.",
+    "answer": "Pseudo-classes are keywords added to selectors that specify a special state of the selected elements.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the difference between em, rem, %, and px units in CSS?",
+    "hint": "Think about scalability.",
+    "answer": "px is fixed, em and rem are relative to font sizes, % is relative to parent dimensions.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the z-index in CSS?",
+    "hint": "Think about stacking elements.",
+    "answer": "z-index controls the vertical stacking order of elements. Higher values appear in front of lower ones.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the difference between visibility: hidden and display: none?",
+    "hint": "Think about layout impact.",
+    "answer": "visibility: hidden hides the element but keeps its space; display: none removes it from layout flow entirely.",
+    "level": "mid"
+  },
+  {
+    "question": "What are media queries in CSS?",
+    "hint": "Consider responsive design.",
+    "answer": "Media queries apply styles depending on device properties like screen width or orientation.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between inline, block, and inline-block elements?",
+    "hint": "Think about how they behave in layout.",
+    "answer": "Inline doesn't break lines, block starts a new line, and inline-block is like inline but allows setting width and height.",
+    "level": "mid"
+  },
+  {
+    "question": "How can you center an element vertically and horizontally?",
+    "hint": "Think about Flexbox and absolute positioning.",
+    "answer": "You can use Flexbox with justify-content and align-items center, or absolute positioning with transform translate.",
+    "level": "mid"
+  },
+  {
+    "question": "What is specificity hierarchy in CSS?",
+    "hint": "Think about which rules override others.",
+    "answer": "Inline styles > IDs > Classes > Elements. The more specific rule is applied.",
+    "level": "mid"
+  },
+  {
+    "question": "What are pseudo-elements in CSS?",
+    "hint": "Think about ::before and ::after.",
+    "answer": "Pseudo-elements style specified parts of an element, like inserting content before or after an element.",
+    "level": "mid"
+  },
+  {
+    "question": "How does CSS Grid differ from Flexbox?",
+    "hint": "Think about 2D vs 1D layouts.",
+    "answer": "CSS Grid allows for 2-dimensional layouts (rows and columns), while Flexbox is mainly 1-dimensional (row or column).",
+    "level": "senior"
+  },
+  {
+    "question": "What is a CSS preprocessor?",
+    "hint": "Think about tools like SASS or LESS.",
+    "answer": "A CSS preprocessor extends CSS with variables, nesting, mixins, and functions to make stylesheets more maintainable.",
+    "level": "senior"
+  },
+  {
+    "question": "What are custom properties (CSS variables)?",
+    "hint": "Think about reusable values.",
+    "answer": "Custom properties are user-defined variables in CSS, defined with --var-name and accessed using var(--var-name).",
+    "level": "mid"
+  },
+  {
+    "question": "How can you improve CSS performance?",
+    "hint": "Think about minimal rules and specificity.",
+    "answer": "Use specific selectors, minimize rule overrides, reduce file size, and avoid deeply nested rules.",
+    "level": "senior"
+  },
+  {
+    "question": "How do you use CSS animations?",
+    "hint": "Think about @keyframes.",
+    "answer": "Define animation steps using @keyframes and apply with animation-name, duration, timing-function, etc.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the cascade in CSS?",
+    "hint": "Think about rule origin, importance, specificity.",
+    "answer": "The cascade determines which rule wins by considering origin (author/user), importance (!important), and specificity.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between min-width and max-width?",
+    "hint": "Think about responsive breakpoints.",
+    "answer": "min-width sets the smallest screen size a rule applies to, max-width sets the largest.",
+    "level": "junior"
+  },
+  {
+    "question": "How can you create a responsive layout using CSS only?",
+    "hint": "Think about Flexbox, Grid, and media queries.",
+    "answer": "Use Flexbox or Grid to structure layout and media queries to adapt it to different screen sizes.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between 'relative' and 'absolute' positioning?",
+    "hint": "Think about positioning context.",
+    "answer": "Relative is positioned relative to its normal position, while absolute is relative to the nearest positioned ancestor.",
+    "level": "mid"
+  },
+  {
+    "question": "What are the advantages of using shorthand properties in CSS?",
+    "hint": "Think about cleaner code.",
+    "answer": "Shorthand properties like margin, padding, and background reduce repetition and improve readability.",
+    "level": "junior"
+  },
+  {
+    "question": "What are key differences between inline styles and external stylesheets?",
+    "hint": "Think about maintainability and reuse.",
+    "answer": "Inline styles are local to elements, external stylesheets separate style from structure and promote reuse.",
+    "level": "mid"
+  },
+  {
+    "question": "How do you handle dark mode in CSS?",
+    "hint": "Think about media queries and class toggling.",
+    "answer": "Use prefers-color-scheme media query or toggle classes using JavaScript to apply dark theme styles.",
+    "level": "senior"
+  },
+  {
+    "question": "How do you ensure cross-browser compatibility in CSS?",
+    "hint": "Think about prefixes and fallbacks.",
+    "answer": "Use vendor prefixes, test across browsers, and provide fallbacks for unsupported features.",
+    "level": "senior"
+  },
+  {
+    "question": "What are logical properties in CSS?",
+    "hint": "Think about writing-mode independence.",
+    "answer": "Logical properties adjust layout depending on writing direction, like margin-inline-start instead of margin-left.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the purpose of the 'contain' property in CSS?",
+    "hint": "Think about performance optimization.",
+    "answer": "'contain' hints to the browser that a component is self-contained, helping optimize rendering and layout calculations.",
+    "level": "lead"
+  },
+  {
+    "question": "How would you structure CSS in a large-scale application?",
+    "hint": "Think about modularity and scalability.",
+    "answer": "Use methodologies like BEM, organize by component or feature, and consider CSS-in-JS or preprocessors for consistency.",
+    "level": "lead"
   }
-] 
+]
