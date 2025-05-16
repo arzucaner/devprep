@@ -1,17 +1,188 @@
 [
   {
-    "question": "What is the difference between semantic and non-semantic HTML elements?",
-    "hint": "Consider meaning and accessibility.",
-    "answer": "Semantic elements clearly describe their meaning to both browser and developer (like <header>, <nav>, <article>), while non-semantic elements don't (like <div>, <span>). Semantic HTML improves accessibility, SEO, and code readability."
+    "question": "What is the difference between <div> and <span> elements in HTML?",
+    "hint": "Think about block-level vs. inline elements.",
+    "answer": "<div> is a block-level element, meaning it takes up the full width available. <span> is an inline element, used for styling small sections of text.",
+    "level": "junior"
   },
   {
-    "question": "Explain the purpose of the data-* attributes in HTML5.",
-    "hint": "Think about custom data storage.",
-    "answer": "data-* attributes allow you to store custom data private to the page or application. They can be accessed via JavaScript using dataset property and are useful for storing extra information on standard HTML elements."
+    "question": "What is semantic HTML?",
+    "hint": "Think about elements that describe their meaning.",
+    "answer": "Semantic HTML uses elements like <article>, <section>, and <header> that clearly describe their meaning in the document structure, improving accessibility and SEO.",
+    "level": "junior"
   },
   {
-    "question": "What is the difference between localStorage and sessionStorage?",
-    "hint": "Consider data persistence and scope.",
-    "answer": "localStorage persists data until explicitly deleted, while sessionStorage only keeps data for the duration of the page session. localStorage is shared between all tabs/windows, while sessionStorage is unique to each tab/window."
+    "question": "What is the difference between id and class attributes in HTML?",
+    "hint": "Consider uniqueness and reuse.",
+    "answer": "id is used to uniquely identify a single element, while class is used to apply the same style or behavior to multiple elements.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the purpose of the <meta> tag in HTML?",
+    "hint": "Think about metadata in the document head.",
+    "answer": "<meta> tags provide metadata such as character encoding, author, and viewport settings for responsive design.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the use of the <label> tag in HTML forms?",
+    "hint": "Think about form accessibility.",
+    "answer": "<label> is used to define a label for an <input> element and improves accessibility by linking text to form controls.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the difference between <strong> and <b> tags?",
+    "hint": "Consider semantic meaning.",
+    "answer": "<strong> indicates strong importance, while <b> is purely stylistic and makes text bold without semantic meaning.",
+    "level": "mid"
+  },
+  {
+    "question": "How does the <picture> element work in HTML?",
+    "hint": "Think about responsive images.",
+    "answer": "The <picture> element allows you to define multiple <source> tags with different image formats or sizes for responsive design. The browser picks the best one to display.",
+    "level": "mid"
+  },
+  {
+    "question": "What are ARIA roles in HTML and why are they important?",
+    "hint": "Think about accessibility enhancements.",
+    "answer": "ARIA roles define attributes that make web content more accessible to people with disabilities, helping screen readers understand page structure.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between <section> and <article> tags?",
+    "hint": "Consider content reuse and independence.",
+    "answer": "<article> is for independent, self-contained content, while <section> is used to group related content together.",
+    "level": "mid"
+  },
+  {
+    "question": "What is lazy loading in HTML?",
+    "hint": "Think about the loading attribute.",
+    "answer": "Lazy loading defers the loading of images or iframes until they are about to appear in the viewport, improving page performance.",
+    "level": "mid"
+  },
+  {
+    "question": "How do you make an HTML page mobile-friendly?",
+    "hint": "Think about the viewport and responsive elements.",
+    "answer": "Use the <meta name='viewport'> tag to control layout on mobile browsers and apply responsive design with CSS.",
+    "level": "mid"
+  },
+  {
+    "question": "What are custom data attributes in HTML?",
+    "hint": "Think about data-* attributes.",
+    "answer": "Custom data attributes are defined using 'data-*' and allow you to store extra information on HTML elements without affecting layout.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the role of the <template> tag in HTML?",
+    "hint": "Think about reusable HTML snippets.",
+    "answer": "The <template> tag holds client-side content that is not rendered when the page loads but can be reused later using JavaScript.",
+    "level": "senior"
+  },
+  {
+    "question": "How would you design a page that meets WCAG accessibility standards?",
+    "hint": "Consider structure, contrast, and keyboard navigation.",
+    "answer": "Use semantic HTML, provide ARIA labels, ensure color contrast, and make all interactive elements keyboard accessible.",
+    "level": "senior"
+  },
+  {
+    "question": "What are microdata and how do they relate to SEO?",
+    "hint": "Think about structured data markup.",
+    "answer": "Microdata are a way to label content to help search engines understand it, improving search result quality via rich snippets.",
+    "level": "senior"
+  },
+  {
+    "question": "How would you structure a complex HTML document for a dashboard interface?",
+    "hint": "Think about layout regions.",
+    "answer": "Use <header>, <nav>, <main>, <aside>, and <footer> elements to clearly separate parts of the interface and maintain structure.",
+    "level": "senior"
+  },
+  {
+    "question": "What are the security risks of using inline event handlers in HTML?",
+    "hint": "Consider XSS vulnerabilities.",
+    "answer": "Inline handlers can expose your application to cross-site scripting (XSS) attacks and are hard to manage in large projects.",
+    "level": "senior"
+  },
+  {
+    "question": "How would you design an HTML page for internationalization?",
+    "hint": "Think about language and direction.",
+    "answer": "Set the 'lang' attribute, use UTF-8 encoding, and structure the page to support both LTR and RTL text directions.",
+    "level": "senior"
+  },
+  {
+    "question": "What is progressive enhancement and how does it relate to HTML?",
+    "hint": "Consider fallback strategies.",
+    "answer": "Progressive enhancement starts with a basic functional experience using semantic HTML and then adds features using CSS and JS.",
+    "level": "lead"
+  },
+  {
+    "question": "How do you optimize HTML for fast loading?",
+    "hint": "Think about minimal markup and deferring scripts.",
+    "answer": "Use minimal semantic HTML, defer non-critical scripts, compress assets, and eliminate unused tags or styles.",
+    "level": "lead"
+  },
+  {
+    "question": "How do you implement responsive tables in HTML?",
+    "hint": "Think about overflow and wrapping.",
+    "answer": "Use CSS to make tables scroll horizontally on small screens or restructure them into block elements using media queries.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between <em> and <i> tags in HTML?",
+    "hint": "Consider semantic value.",
+    "answer": "<em> is used to emphasize text semantically, while <i> is used for styling purposes only.",
+    "level": "mid"
+  },
+  {
+    "question": "What are void elements in HTML?",
+    "hint": "Think about self-closing tags.",
+    "answer": "Void elements are HTML elements that do not have closing tags, such as <img>, <br>, and <input>.",
+    "level": "junior"
+  },
+  {
+    "question": "How does the <noscript> tag work in HTML?",
+    "hint": "Think about browsers without JavaScript.",
+    "answer": "<noscript> provides fallback content for users with JavaScript disabled or unsupported.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between block and inline elements in HTML?",
+    "hint": "Think about layout behavior.",
+    "answer": "Block elements start on a new line and take full width. Inline elements stay in-line with text and take only the necessary width.",
+    "level": "junior"
+  },
+  {
+    "question": "How do you embed external media like videos in HTML?",
+    "hint": "Think about <video> and <iframe> tags.",
+    "answer": "You can use the <video> tag for self-hosted media and <iframe> for services like YouTube.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the <abbr> tag and when would you use it?",
+    "hint": "Think about abbreviations and accessibility.",
+    "answer": "<abbr> provides a full-text expansion of an abbreviation when hovered or accessed by screen readers.",
+    "level": "mid"
+  },
+  {
+    "question": "How does <form> submission work in HTML?",
+    "hint": "Think about method and action attributes.",
+    "answer": "<form> submits user input to a server via HTTP using the specified method (GET/POST) and action (URL).",
+    "level": "junior"
+  },
+  {
+    "question": "What are landmark elements in HTML?",
+    "hint": "Think about navigation and accessibility.",
+    "answer": "Landmark elements like <main>, <nav>, <header>, and <footer> help assistive technologies navigate page regions.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between <script defer> and <script async>?",
+    "hint": "Think about loading order.",
+    "answer": "'defer' waits until DOM parsing is complete; 'async' executes as soon as it's downloaded, potentially before DOM is ready.",
+    "level": "senior"
+  },
+  {
+    "question": "How would you create a form that prevents browser autocomplete?",
+    "hint": "Think about input attributes.",
+    "answer": "Use the 'autocomplete=\"off\"' attribute on the <form> or specific <input> elements.",
+    "level": "mid"
   }
-] 
+]
