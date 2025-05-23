@@ -1,0 +1,50 @@
+.typewriter-heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.7rem;
+  margin-top: 1.5rem;
+}
+.typewriter-heading {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #35506b;
+  text-align: center;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  margin: 0;
+  position: relative;
+  min-height: 2.7em;
+  transition: color 0.2s;
+}
+.typewriter-cursor {
+  display: inline-block;
+  width: 1ch;
+  color: #f49d75;
+  animation: blink-cursor 1s steps(1) infinite;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-left: 2px;
+}
+@keyframes blink-cursor {
+  0%, 60% { opacity: 1; }
+  61%, 100% { opacity: 0; }
+}
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+@media (max-width: 600px) {
+  .typewriter-heading {
+    font-size: 1.25rem;
+    min-height: 2.1em;
+  }
+  .typewriter-heading-container {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+} 
