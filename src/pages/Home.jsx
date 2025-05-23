@@ -9,6 +9,7 @@ import {
   FaCss3Alt 
 } from 'react-icons/fa';
 import { SiTypescript } from 'react-icons/si';
+import InfoRotator from '../components/InfoRotator';
 import './Home.css';
 
 const Home = () => {
@@ -60,8 +61,8 @@ const Home = () => {
   return (
     <div className="home">
       <h1>Welcome to DevPrep</h1>
-      <p className="subtitle">Your comprehensive guide to web development</p>
-      
+      <p className="subtitle">Practice. Learn. Get Hired.</p>
+      <InfoRotator />
       <div className="topics-grid">
         {topics.map((topic) => (
           <Link 

@@ -95,4 +95,31 @@
   .topics-grid {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 425px) {
+  .home {
+    padding: 0.5rem;
+  }
+  .home h1 {
+    font-size: 1.15rem;
+    margin-bottom: 0.3rem;
+  }
+  .subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+    padding: 0 0.2rem;
+  }
+  .topics-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0.2rem;
+  }
+  .topic-card {
+    padding: 1rem 0.5rem;
+    font-size: 0.98rem;
+  }
+  .topic-icon {
+    font-size: 2rem;
+  }
 } 

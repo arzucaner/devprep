@@ -9,11 +9,12 @@ import TypeScript from './pages/TypeScript';
 import NodeJS from './pages/NodeJS';
 import HTML from './pages/HTML';
 import CSS from './pages/CSS';
+import QuizPage from './pages/QuizPage';
 import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/devprep">
       <div className="app">
         <Navbar />
         <main className="main-content">
@@ -26,6 +27,7 @@ function App() {
             <Route path="/nodejs" element={<NodeJS />} />
             <Route path="/html" element={<HTML />} />
             <Route path="/css" element={<CSS />} />
+            <Route path="/quiz" element={<QuizPage />} />
             <Route path="*" element={<div>Page not found</div>} />
           </Routes>
         </main>

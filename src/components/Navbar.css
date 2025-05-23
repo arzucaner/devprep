@@ -74,4 +74,42 @@
 
 .nav-link:hover {
   color: #f49d75;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.7rem 0.7rem;
+  }
+  .navbar-brand a {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .navbar-menu {
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 100%;
+  }
+  .dropdown-menu {
+    min-width: 150px;
+    left: 0;
+    right: auto;
+  }
+  .dropdown-trigger {
+    font-size: 0.98rem;
+    padding: 0.4rem;
+  }
+  .nav-link {
+    font-size: 0.98rem;
+    padding: 0.4rem 0.2rem;
+  }
+}
+@media (max-width: 400px) {
+  .navbar {
+    padding: 0.4rem 0.2rem;
+  }
+  .navbar-brand a {
+    font-size: 1rem;
+  }
 } 
