@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What is a React component?",
+    "options": [
+      "A function or class that returns HTML",
+      "A special type of JavaScript variable",
+      "An HTML element",
+      "A CSS rule"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the purpose of the useState hook?",
+    "options": [
+      "To perform API calls",
+      "To define props",
+      "To manage local state in functional components",
+      "To style components"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is JSX in React?",
+    "options": [
+      "A JavaScript XML-like syntax used to describe UI",
+      "A CSS preprocessor",
+      "A data format like JSON",
+      "A build tool"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does useEffect do?",
+    "options": [
+      "It handles rendering of components",
+      "It lets you run side effects in functional components",
+      "It replaces Redux",
+      "It binds events to components"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "How do you pass data from a parent to a child component?",
+    "options": [
+      "Using Redux",
+      "Using useState",
+      "By passing props",
+      "With localStorage"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the virtual DOM?",
+    "options": [
+      "A browser extension for debugging React",
+      "A virtual browser window",
+      "A lightweight copy of the real DOM used for efficient updates",
+      "A JSON version of the HTML"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is prop drilling?",
+    "options": [
+      "A method to inject props into state",
+      "Passing props through multiple nested components",
+      "Copying props to Redux",
+      "Replacing props with context"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What does React.StrictMode do?",
+    "options": [
+      "Prevents the use of deprecated features",
+      "Enables more performant rendering",
+      "Adds extra checks and warnings for development",
+      "Runs only in strict browsers"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which hook is used to access context in React?",
+    "options": [
+      "useState",
+      "useEffect",
+      "useRef",
+      "useContext"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "How can you conditionally render elements in React?",
+    "options": [
+      "Using if statements only",
+      "Using loops",
+      "Using ternary operators or logical &&",
+      "You can't conditionally render"
+    ],
+    "answer": 2
+  }
+]

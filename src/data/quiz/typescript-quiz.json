@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What is TypeScript?",
+    "options": [
+      "A CSS framework",
+      "A superset of JavaScript that adds static typing",
+      "A database language",
+      "A templating engine"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "How do you define a variable with a specific type in TypeScript?",
+    "options": [
+      "let name: string = 'John';",
+      "string name = 'John';",
+      "let name = string 'John';",
+      "define name as string"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which of the following types is not primitive in TypeScript?",
+    "options": [
+      "string",
+      "boolean",
+      "object",
+      "number"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What does the 'any' type mean in TypeScript?",
+    "options": [
+      "It’s a type that restricts all usage",
+      "It allows any value to be assigned, disabling type checking",
+      "It refers to a list of unknown values",
+      "It's a way to define dynamic import"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is a tuple in TypeScript?",
+    "options": [
+      "An array with unlimited values",
+      "A fixed-length array with specific types for each element",
+      "A function with no parameters",
+      "An object with readonly properties"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the difference between 'interface' and 'type' in TypeScript?",
+    "options": [
+      "They are completely different and cannot be used interchangeably",
+      "Only interface can describe functions",
+      "interface is better for object shapes; type is more flexible and can be used for unions",
+      "type can only be used for arrays"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "How do you define an optional property in an interface?",
+    "options": [
+      "name = string?",
+      "name?: string",
+      "optional name: string",
+      "string name?"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What does the 'never' type represent in TypeScript?",
+    "options": [
+      "A variable that can be assigned null only",
+      "A type that represents a value that never occurs",
+      "A type used to describe asynchronous functions",
+      "A type used to represent objects"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "How do you create a union type in TypeScript?",
+    "options": [
+      "type ID = string or number;",
+      "type ID = (string + number);",
+      "type ID = string | number;",
+      "type ID = string || number;"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is type inference in TypeScript?",
+    "options": [
+      "Forcing you to define types manually",
+      "Automatically guessing the type of a variable based on its value",
+      "Assigning default values to variables",
+      "Restricting dynamic imports"
+    ],
+    "answer": 1
+  }
+]

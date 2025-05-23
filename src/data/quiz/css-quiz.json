@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What is the CSS Box Model?",
+    "options": [
+      "A JavaScript data structure",
+      "A layout engine for HTML5",
+      "A model describing margin, border, padding, and content",
+      "A way to design grid layouts"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is specificity in CSS?",
+    "options": [
+      "How a selector is prioritized in a browser",
+      "How fast the CSS rule runs",
+      "How styles are compiled into HTML",
+      "How responsive the element is"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "How can you center a div using flexbox?",
+    "options": [
+      "margin: auto;",
+      "position: absolute;",
+      "display: flex; justify-content: center; align-items: center;",
+      "float: center;"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the difference between relative and absolute positioning in CSS?",
+    "options": [
+      "Relative is fixed to the page; absolute is not",
+      "Relative positions based on its normal spot; absolute positions based on the nearest positioned ancestor",
+      "Relative is only for text; absolute is for blocks",
+      "Relative makes elements scrollable"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What does 'z-index' do in CSS?",
+    "options": [
+      "Changes the zoom level of an element",
+      "Controls the stacking order of elements",
+      "Changes the index of arrays",
+      "Sets the rotation in 3D space"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the difference between 'em' and 'rem' units in CSS?",
+    "options": [
+      "'em' is always 1px; 'rem' is relative to its parent",
+      "'em' is relative to the parent element; 'rem' is relative to the root element",
+      "'rem' is always 16px",
+      "They are both the same"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which CSS property makes an element invisible but still takes up space?",
+    "options": [
+      "display: none;",
+      "visibility: hidden;",
+      "opacity: 0;",
+      "position: absolute;"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "How do media queries help with responsive design?",
+    "options": [
+      "They allow you to add media files to CSS",
+      "They apply different styles depending on screen size or device",
+      "They query the DOM for media tags",
+      "They display popups on media load"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the default position value of an HTML element?",
+    "options": [
+      "static",
+      "relative",
+      "absolute",
+      "fixed"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which property is used to create space between the content and border of an element?",
+    "options": [
+      "margin",
+      "padding",
+      "border-spacing",
+      "gap"
+    ],
+    "answer": 1
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What is Node.js?",
+    "options": [
+      "A frontend framework",
+      "A runtime environment for executing JavaScript on the server",
+      "A JavaScript transpiler",
+      "A CSS preprocessor"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which engine powers Node.js under the hood?",
+    "options": [
+      "JavaScriptCore",
+      "SpiderMonkey",
+      "V8",
+      "Chakra"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which module is used to create a web server in Node.js?",
+    "options": [
+      "net",
+      "http",
+      "url",
+      "fs"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is npm in the context of Node.js?",
+    "options": [
+      "A build tool",
+      "A Node compiler",
+      "The default package manager for Node.js",
+      "A file system library"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the purpose of the package.json file?",
+    "options": [
+      "To store Node.js logs",
+      "To define project metadata and dependencies",
+      "To run the server",
+      "To serve static files"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the difference between require() and import?",
+    "options": [
+      "require is synchronous; import is asynchronous and ES module-based",
+      "They are the same",
+      "require works in the browser only",
+      "import only works with JSON"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the event loop in Node.js?",
+    "options": [
+      "A loop to execute all user events",
+      "A function that loops HTTP requests",
+      "A mechanism that handles asynchronous callbacks and operations",
+      "A memory management tool"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "How do you read a file asynchronously in Node.js?",
+    "options": [
+      "fs.readFileSync()",
+      "fs.readFile()",
+      "fs.open()",
+      "fs.asyncRead()"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which of these is a built-in Node.js module?",
+    "options": [
+      "axios",
+      "express",
+      "http",
+      "lodash"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What does process.env contain?",
+    "options": [
+      "LocalStorage variables",
+      "Environment variables for the Node.js process",
+      "System logs",
+      "Server-side cookies"
+    ],
+    "answer": 1
+  }
+]

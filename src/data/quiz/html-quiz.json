@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyperlink and Text Markup Language",
+      "Home Tool Markup Language",
+      "Hyper Text Markup Language",
+      "HighText Machine Language"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the purpose of the <!DOCTYPE html> declaration?",
+    "options": [
+      "It adds a comment to HTML code",
+      "It defines a block of code in HTML",
+      "It tells the browser the version of HTML used",
+      "It links external stylesheets"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which HTML tag is used to define an unordered list?",
+    "options": [
+      "<ol>",
+      "<ul>",
+      "<li>",
+      "<list>"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the difference between <span> and <div> in HTML?",
+    "options": [
+      "span is block-level, div is inline",
+      "div is only used inside tables",
+      "span is inline, div is block-level",
+      "There is no difference"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What does the 'alt' attribute in an <img> tag do?",
+    "options": [
+      "It links to another page",
+      "It changes the image’s size",
+      "It provides alternative text if the image fails to load",
+      "It sets the image caption"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which tag is used to create a hyperlink in HTML?",
+    "options": [
+      "<link>",
+      "<a>",
+      "<href>",
+      "<url>"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is semantic HTML?",
+    "options": [
+      "HTML that uses JavaScript",
+      "Using <div> and <span> for everything",
+      "HTML that clearly describes its meaning and structure",
+      "HTML that includes animation"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which HTML tag is used to define a table row?",
+    "options": [
+      "<td>",
+      "<tr>",
+      "<th>",
+      "<table>"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the correct way to include a comment in HTML?",
+    "options": [
+      "// This is a comment",
+      "# This is a comment",
+      "<!-- This is a comment -->",
+      "<comment>This is a comment</comment>"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which input type is used for entering a password in HTML forms?",
+    "options": [
+      "text",
+      "email",
+      "password",
+      "secure"
+    ],
+    "answer": 2
+  }
+]

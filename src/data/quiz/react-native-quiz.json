@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What is React Native?",
+    "options": [
+      "A UI library for the web",
+      "A framework to build native mobile apps using React and JavaScript",
+      "A server-side JavaScript framework",
+      "An alternative to Redux"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which core component is used to display text in React Native?",
+    "options": [
+      "<div>",
+      "<text>",
+      "<Text>",
+      "<span>"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which API is used to navigate between screens in React Native?",
+    "options": [
+      "React Router",
+      "React Native Navigator",
+      "React Navigation",
+      "NativeRouter"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "How do you apply styles in React Native?",
+    "options": [
+      "Using CSS files",
+      "Using inline styles only",
+      "Using the StyleSheet API or inline styles",
+      "Using SASS or LESS"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which layout system does React Native use by default?",
+    "options": [
+      "Grid",
+      "Block",
+      "Table",
+      "Flexbox"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "What is the difference between ScrollView and FlatList?",
+    "options": [
+      "FlatList supports only vertical scrolling",
+      "ScrollView is better for large lists",
+      "FlatList is optimized for large data sets with lazy loading",
+      "ScrollView requires Redux"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which hook is commonly used for state management in functional components?",
+    "options": [
+      "useEffect",
+      "useContext",
+      "useState",
+      "useRef"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "How do you handle touch events in React Native?",
+    "options": [
+      "With GestureListener",
+      "Using TouchableOpacity or Pressable",
+      "Using onClick",
+      "Using NativeEvents"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which command runs a React Native app on Android?",
+    "options": [
+      "npm run android",
+      "npx react-native run-android",
+      "npm start android",
+      "npx android-start"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the default value of flexDirection in React Native?",
+    "options": [
+      "row",
+      "column",
+      "center",
+      "auto"
+    ],
+    "answer": 1
+  }
+]

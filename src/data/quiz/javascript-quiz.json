@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What is the difference between var, let, and const in JavaScript?",
+    "options": [
+      "They are all the same",
+      "var is function-scoped, let and const are block-scoped; const can't be reassigned",
+      "let and const are hoisted, var is not",
+      "const is for objects only"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is a closure in JavaScript?",
+    "options": [
+      "A function that closes the browser tab",
+      "A function having access to the parent scope, even after the parent function has closed",
+      "A block of code that cannot run",
+      "A data structure"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What does 'this' refer to in JavaScript?",
+    "options": [
+      "It refers to the current function",
+      "It always refers to window",
+      "It refers to the object that is executing the current function",
+      "It refers to the last declared variable"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the difference between == and ===?",
+    "options": [
+      "== compares type and value; === compares only value",
+      "== compares only value; === compares type and value",
+      "They are identical",
+      "== is strict equality"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is hoisting in JavaScript?",
+    "options": [
+      "Raising variables to the top of their scope",
+      "A way to sort arrays",
+      "A method to call APIs",
+      "A technique to loop through objects"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the event loop in JavaScript?",
+    "options": [
+      "A loop to create events",
+      "A mechanism that handles asynchronous callbacks in JavaScript",
+      "A loop that fetches API data",
+      "A function inside setTimeout"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What does the 'typeof' operator return for an array?",
+    "options": [
+      "'array'",
+      "'object'",
+      "'list'",
+      "'function'"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the purpose of the 'use strict' directive?",
+    "options": [
+      "It enables faster code",
+      "It prevents you from using modern features",
+      "It helps catch common coding mistakes and prevents unsafe actions",
+      "It converts JS to TypeScript"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the difference between null and undefined?",
+    "options": [
+      "They are the same",
+      "null means an object is empty, undefined means a variable has not been assigned",
+      "undefined is an object, null is not",
+      "null is for strings only"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which method is used to convert a JSON string into a JavaScript object?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.parse()",
+      "JSON.objectify()",
+      "JSON.toObject()"
+    ],
+    "answer": 1
+  }
+]
