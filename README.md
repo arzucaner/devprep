@@ -1,70 +1,162 @@
-# Getting Started with Create React App
+# DevPrep 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+> A comprehensive web development interview preparation platform
 
-In the project directory, you can run:
+![Homepage Screenshot](assets/homepage.png)
 
-### `npm start`
+## 📝 Project Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+DevPrep is a modern, mobile-responsive web application designed to help web developers prepare for technical interviews. Whether you're a junior developer taking your first steps or a senior developer preparing for a lead role, DevPrep provides a structured and interactive way to enhance your technical knowledge and interview readiness.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Why DevPrep?
 
-### `npm test`
+- **Comprehensive Coverage**: Access interview questions across various web development topics
+- **Role-Based Learning**: Filter questions by experience level (Junior to Lead)
+- **Interactive Learning**: Test your knowledge with real-time quizzes and scoring
+- **Mobile-First Design**: Practice anywhere, anytime with our responsive interface
+- **Regular Updates**: Stay current with the latest web development trends and interview patterns
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎯 Target Audience
 
-### `npm run build`
+- Junior Web Developers
+- Mid-Level Developers
+- Senior Developers
+- Tech Leads
+- Anyone preparing for web development interviews
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🔗 Live Demo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[View Live Demo](https://yourusername.github.io/devprep)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ✨ Features
 
-### `npm run eject`
+- **Categorized Questions**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  - JavaScript
+  - React
+  - HTML/CSS
+  - Node.js
+  - And more...
+- **Experience Level Filters**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  - Junior Level
+  - Mid-Level
+  - Senior Level
+  - Lead Level
+- **Interactive Quiz System**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  - Real-time scoring
+  - Immediate feedback
+  - Progress tracking
+  - Topic-specific quizzes
+- **User Experience**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  - Animated "Did You Know?" information box
+  - Mobile-first responsive design
+  - Clean and intuitive interface
+  - Dark/Light mode support
 
-## Learn More
+## 🛠️ Tech Stack
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Frontend Framework**: React
+- **Styling**: CSS3 with modern features
+- **Routing**: React Router
+- **Data Management**: JSON
+- **Icons**: React Icons
+- **Deployment**: GitHub Pages
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📁 Project Structure
 
-### Code Splitting
+```
+devprep/
+├── src/
+│   ├── components/     # Reusable UI components
+│   │   └── quiz/      # Topic-specific quiz data
+│   ├── pages/         # Main application pages
+│   └── styles/        # Global styles and themes
+├── public/            # Static assets
+└── package.json       # Project dependencies
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🚀 Getting Started
 
-### Analyzing the Bundle Size
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Node.js (v14.0.0 or higher)
+- npm (v6.0.0 or higher)
+- Git
 
-### Making a Progressive Web App
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Clone the repository
 
-### Advanced Configuration
+   ```bash
+   git clone https://github.com/yourusername/devprep.git
+   ```
+2. Navigate to project directory
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```bash
+   cd devprep
+   ```
+3. Install dependencies
 
-### Deployment
+   ```bash
+   npm install
+   ```
+4. Start the development server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+   ```bash
+   npm start
+   ```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-### `npm run build` fails to minify
+## 📦 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### GitHub Pages Deployment
+
+1. Add homepage to `package.json`:
+
+   ```json
+   "homepage": "https://yourusername.github.io/devprep"
+   ```
+2. Install GitHub Pages package:
+
+   ```bash
+   npm install --save gh-pages
+   ```
+3. Add deployment scripts to `package.json`:
+
+   ```json
+   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d build"
+   }
+   ```
+4. Deploy to GitHub Pages:
+
+   ```bash
+   npm run deploy
+   ```
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgements
+
+- Inspired by real-world interview preparation needs
+- Icons provided by [React Icons](https://react-icons.github.io/react-icons/)
+- Built with [Create React App](https://create-react-app.dev/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/devprep/issues).
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
