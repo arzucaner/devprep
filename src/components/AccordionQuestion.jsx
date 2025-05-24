@@ -15,26 +15,34 @@ const AccordionQuestion = ({ question, hint, answer, isExpanded, onToggle }) => 
   };
 
   return (
-    <div 
+    <article 
       className={`accordion-question ${isExpanded ? 'expanded' : ''}`}
       onClick={handleToggle}
+      role="region"
+      aria-expanded={isExpanded}
     >
-      <div className="accordion-header">
+      <header className="accordion-header">
         <h2 className="question-title">{question}</h2>
-        <span className="accordion-icon">
+        <span className="accordion-icon" aria-hidden="true">
           {isExpanded ? <FaChevronUp /> : <FaChevronDown />}
         </span>
-      </div>
+      </header>
 
       {isExpanded && (
-        <div className="accordion-content">
-          <div className="question-actions">
+        <section className="accordion-content">
+          <div 
+            className="question-actions"
+            role="group"
+            aria-label="Question actions"
+          >
             <button 
               className="action-button hint-button"
               onClick={(e) => {
                 e.stopPropagation();
                 setShowHint(!showHint);
               }}
+              aria-expanded={showHint}
+              aria-controls="accordion-hint"
             >
               {showHint ? 'Hide Hint' : 'Show Hint'}
             </button>
@@ -45,25 +53,35 @@ const AccordionQuestion = ({ question, hint, answer, isExpanded, onToggle }) => 
                 e.stopPropagation();
                 setShowAnswer(!showAnswer);
               }}
+              aria-expanded={showAnswer}
+              aria-controls="accordion-answer"
             >
               {showAnswer ? 'Hide Answer' : 'Show Answer'}
             </button>
           </div>
 
           {showHint && (
-            <div className="hint-content">
+            <div 
+              id="accordion-hint"
+              className="hint-content"
+              aria-label="Question hint"
+            >
               <strong>Hint:</strong> {hint}
             </div>
           )}
 
           {showAnswer && (
-            <div className="answer-content">
+            <div 
+              id="accordion-answer"
+              className="answer-content"
+              aria-label="Question answer"
+            >
               <strong>Answer:</strong> {answer}
             </div>
           )}
-        </div>
+        </section>
       )}
-    </div>
+    </article>
   );
 };
 

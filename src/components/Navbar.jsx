@@ -17,41 +17,55 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="navbar">
-      <div className="navbar-brand">
-        <Link to="/">DevPrep</Link>
-      </div>
-      
-      <div className="navbar-menu">
-        <div 
-          className="dropdown"
-          onMouseEnter={() => setIsDropdownOpen(true)}
-          onMouseLeave={() => setIsDropdownOpen(false)}
-        >
-          <button className="dropdown-trigger">
-            Interview Questions <FaChevronDown />
-          </button>
-          
-          {isDropdownOpen && (
-            <div className="dropdown-menu">
-              {topics.map((topic) => (
-                <Link 
-                  key={topic.path} 
-                  to={topic.path}
-                  className="dropdown-item"
-                >
-                  {topic.name}
-                </Link>
-              ))}
-            </div>
-          )}
+    <header>
+      <nav className="navbar" role="navigation" aria-label="Main navigation">
+        <div className="navbar-brand">
+          <Link to="/" aria-label="DevPrep Home">DevPrep</Link>
         </div>
         
-        <Link to="/quiz" className="nav-link">
-          Mini Quiz
-        </Link>
-      </div>
-    </nav>
+        <div className="navbar-menu">
+          <div 
+            className="dropdown"
+            onMouseEnter={() => setIsDropdownOpen(true)}
+            onMouseLeave={() => setIsDropdownOpen(false)}
+          >
+            <button 
+              className="dropdown-trigger"
+              aria-expanded={isDropdownOpen}
+              aria-controls="topics-menu"
+              aria-haspopup="true"
+            >
+              Interview Questions <FaChevronDown aria-hidden="true" />
+            </button>
+            
+            {isDropdownOpen && (
+              <ul 
+                id="topics-menu"
+                className="dropdown-menu"
+                role="menu"
+                aria-label="Interview topics"
+              >
+                {topics.map((topic) => (
+                  <li key={topic.path} role="none">
+                    <Link 
+                      to={topic.path}
+                      className="dropdown-item"
+                      role="menuitem"
+                    >
+                      {topic.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+          
+          <Link to="/quiz" className="nav-link" role="menuitem">
+            Mini Quiz
+          </Link>
+        </div>
+      </nav>
+    </header>
   );
 };
 
