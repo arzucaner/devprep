@@ -26,7 +26,7 @@ DevPrep is a modern, mobile-responsive web application designed to help web deve
 
 ## 🔗 Live Demo
 
-[View Live Demo](https://yourusername.github.io/devprep)
+[View Live Demo](https://www.youtube.com/watch?v=9R6JbeWdJGA)
 
 ## ✨ Features
 
@@ -150,7 +150,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! 
+Contributions, issues, and feature requests are welcome!
 
 1. Fork the Project
 2. Create your Feature Branch
