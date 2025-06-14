@@ -6,7 +6,9 @@ import {
   FaMobile, 
   FaNodeJs, 
   FaHtml5, 
-  FaCss3Alt 
+  FaCss3Alt,
+  FaPython,
+  FaJava
 } from 'react-icons/fa';
 import { SiTypescript } from 'react-icons/si';
 import InfoRotator from '../components/InfoRotator';
@@ -43,6 +45,18 @@ const Home = () => {
       icon: <FaNodeJs />, 
       path: '/nodejs',
       description: 'Server-side JavaScript and backend development'
+    },
+    { 
+      name: 'Python', 
+      icon: <FaPython />, 
+      path: '/python',
+      description: 'Learn Python programming and backend development'
+    },
+    { 
+      name: 'Java', 
+      icon: <FaJava />, 
+      path: '/java',
+      description: 'Master Java programming and enterprise development'
     },
     { 
       name: 'HTML', 

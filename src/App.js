@@ -9,6 +9,8 @@ import TypeScript from './pages/TypeScript';
 import NodeJS from './pages/NodeJS';
 import HTML from './pages/HTML';
 import CSS from './pages/CSS';
+import Python from './pages/Python';
+import Java from './pages/Java';
 import QuizPage from './pages/QuizPage';
 import './App.css';
 
@@ -27,6 +29,8 @@ function App() {
             <Route path="/nodejs" element={<NodeJS />} />
             <Route path="/html" element={<HTML />} />
             <Route path="/css" element={<CSS />} />
+            <Route path="/python" element={<Python />} />
+            <Route path="/java" element={<Java />} />
             <Route path="/quiz" element={<QuizPage />} />
             <Route path="*" element={<div>Page not found</div>} />
           </Routes>

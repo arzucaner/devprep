@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What is the output of print(type([])) in Python?",
+    "options": [
+      "<class 'array'>",
+      "<class 'list'>",
+      "<class 'tuple'>",
+      "<class 'sequence'>"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which of the following is NOT a valid Python data type?",
+    "options": [
+      "dictionary",
+      "set",
+      "array",
+      "tuple"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What does the 'self' parameter represent in a Python class method?",
+    "options": [
+      "The class itself",
+      "The instance of the class",
+      "A reference to the parent class",
+      "A static method indicator"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which of these is the correct way to create a virtual environment in Python?",
+    "options": [
+      "python -m venv env",
+      "pip install venv",
+      "python create venv",
+      "virtualenv --create"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the purpose of the 'yield' keyword in Python?",
+    "options": [
+      "To stop program execution",
+      "To create a generator function",
+      "To handle exceptions",
+      "To define a class method"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which of these is NOT a valid way to create a dictionary in Python?",
+    "options": [
+      "dict()",
+      "{key: value}",
+      "dict(key=value)",
+      "[key: value]"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "What is the correct way to handle multiple exceptions in Python?",
+    "options": [
+      "try: ... except (Exception1, Exception2):",
+      "try: ... except Exception1 or Exception2:",
+      "try: ... except Exception1 + Exception2:",
+      "try: ... except [Exception1, Exception2]:"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which of these is NOT a valid Python list method?",
+    "options": [
+      "append()",
+      "push()",
+      "extend()",
+      "insert()"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the purpose of the '__init__.py' file in a Python package?",
+    "options": [
+      "To initialize the Python interpreter",
+      "To mark a directory as a Python package",
+      "To define package dependencies",
+      "To set up virtual environment"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which of these is the correct way to open a file in Python?",
+    "options": [
+      "open('file.txt', 'r')",
+      "file.open('file.txt')",
+      "open.file('file.txt')",
+      "file('file.txt').open()"
+    ],
+    "answer": 0
+  }
+] 

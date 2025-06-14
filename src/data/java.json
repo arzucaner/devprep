@@ -1,0 +1,188 @@
+[
+  {
+    "question": "What is the JVM and how does it work?",
+    "hint": "Think about Java's platform independence.",
+    "answer": "The JVM (Java Virtual Machine) is a runtime environment that executes Java bytecode. It provides platform independence by converting bytecode into machine-specific code, allowing Java programs to run on any device with a JVM.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the difference between JDK, JRE, and JVM?",
+    "hint": "Consider development vs runtime environment.",
+    "answer": "JDK (Java Development Kit) includes JRE plus development tools. JRE (Java Runtime Environment) includes JVM plus libraries. JVM (Java Virtual Machine) is the runtime engine that executes Java bytecode.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the difference between == and .equals() in Java?",
+    "hint": "Think about reference vs value comparison.",
+    "answer": "== compares object references (memory addresses), while .equals() compares the actual content/values of objects. For String objects, == checks if they point to the same memory location, while .equals() checks if they have the same content.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the difference between ArrayList and LinkedList?",
+    "hint": "Consider data structure and performance.",
+    "answer": "ArrayList is backed by a dynamic array, providing fast random access but slower insertions/deletions. LinkedList is a doubly-linked list, providing fast insertions/deletions but slower random access.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the purpose of the 'final' keyword in Java?",
+    "hint": "Think about immutability and inheritance.",
+    "answer": "The 'final' keyword can be used with variables (makes them constants), methods (prevents overriding), and classes (prevents inheritance). It ensures immutability and security in the code.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the difference between checked and unchecked exceptions?",
+    "hint": "Consider compile-time vs runtime.",
+    "answer": "Checked exceptions must be handled at compile time (using try-catch or throws), while unchecked exceptions (RuntimeException and its subclasses) don't require explicit handling.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the purpose of the 'volatile' keyword in Java?",
+    "hint": "Think about thread visibility.",
+    "answer": "The 'volatile' keyword ensures that a variable's value is always read from and written to main memory, preventing thread caching and ensuring visibility across threads.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between HashMap and HashTable?",
+    "hint": "Consider thread safety and null values.",
+    "answer": "HashMap is not synchronized and allows null keys/values, while HashTable is synchronized and doesn't allow null keys/values. HashMap is generally preferred unless thread safety is required.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the purpose of the 'transient' keyword in Java?",
+    "hint": "Think about serialization.",
+    "answer": "The 'transient' keyword marks a field to be excluded from serialization, meaning it won't be saved when the object is serialized.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between String, StringBuilder, and StringBuffer?",
+    "hint": "Consider mutability and thread safety.",
+    "answer": "String is immutable, StringBuilder is mutable and not thread-safe, and StringBuffer is mutable and thread-safe. StringBuilder is generally preferred for single-threaded operations.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the purpose of the 'synchronized' keyword in Java?",
+    "hint": "Think about thread safety.",
+    "answer": "The 'synchronized' keyword provides a locking mechanism to prevent multiple threads from executing a method or block simultaneously, ensuring thread safety.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between wait() and sleep() in Java?",
+    "hint": "Consider thread behavior and locks.",
+    "answer": "wait() releases the lock and waits for notification, while sleep() keeps the lock and pauses execution for a specified time. wait() is used for inter-thread communication.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the purpose of the 'static' keyword in Java?",
+    "hint": "Think about class-level vs instance-level.",
+    "answer": "The 'static' keyword indicates that a member belongs to the class rather than instances of the class. Static members are shared across all instances and can be accessed without creating an object.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the difference between shallow and deep copying in Java?",
+    "hint": "Consider object references.",
+    "answer": "Shallow copy creates a new object but references the same nested objects, while deep copy creates a new object and recursively copies all nested objects.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the purpose of the 'interface' keyword in Java?",
+    "hint": "Think about abstraction and contracts.",
+    "answer": "An interface defines a contract that implementing classes must follow. It can contain abstract methods, default methods, and constants, providing a way to achieve abstraction and multiple inheritance.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the difference between 'extends' and 'implements' in Java?",
+    "hint": "Consider inheritance vs interface implementation.",
+    "answer": "'extends' is used for class inheritance (single inheritance), while 'implements' is used for implementing interfaces (multiple implementation allowed).",
+    "level": "junior"
+  },
+  {
+    "question": "What is the purpose of the 'try-with-resources' statement in Java?",
+    "hint": "Think about resource management.",
+    "answer": "try-with-resources automatically closes resources (implementing AutoCloseable) when the try block exits, ensuring proper resource cleanup even if an exception occurs.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between 'Comparable' and 'Comparator' in Java?",
+    "hint": "Consider sorting and comparison.",
+    "answer": "Comparable is an interface that defines natural ordering within a class, while Comparator is an interface that defines custom ordering outside the class. Comparable uses compareTo(), Comparator uses compare().",
+    "level": "mid"
+  },
+  {
+    "question": "What is the purpose of the 'Optional' class in Java?",
+    "hint": "Think about null handling.",
+    "answer": "Optional is a container object that may or may not contain a value, helping to avoid NullPointerException and making the code more explicit about null handling.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between 'ExecutorService' and 'ForkJoinPool' in Java?",
+    "hint": "Consider parallel processing.",
+    "answer": "ExecutorService is for general-purpose thread pooling, while ForkJoinPool is specifically designed for divide-and-conquer algorithms using work-stealing.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the purpose of the 'Stream' API in Java?",
+    "hint": "Think about functional programming.",
+    "answer": "The Stream API provides a functional approach to processing collections of data, enabling operations like filtering, mapping, and reducing in a declarative way.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between 'checked' and 'unchecked' exceptions in Java?",
+    "hint": "Consider exception handling requirements.",
+    "answer": "Checked exceptions must be handled at compile time (using try-catch or throws), while unchecked exceptions (RuntimeException and its subclasses) don't require explicit handling.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the purpose of the 'CompletableFuture' class in Java?",
+    "hint": "Think about asynchronous programming.",
+    "answer": "CompletableFuture provides a way to write asynchronous, non-blocking code, allowing for better handling of asynchronous operations and their results.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between 'HashMap' and 'ConcurrentHashMap' in Java?",
+    "hint": "Consider thread safety and performance.",
+    "answer": "HashMap is not thread-safe, while ConcurrentHashMap is thread-safe and provides better concurrency by using segment-level locking instead of object-level locking.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the purpose of the 'Module' system in Java 9+?",
+    "hint": "Think about modularity and encapsulation.",
+    "answer": "The Module system provides better encapsulation and dependency management, allowing developers to specify which packages are exported and which modules are required.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between 'ArrayList' and 'Vector' in Java?",
+    "hint": "Consider thread safety and growth factor.",
+    "answer": "ArrayList is not synchronized and grows by 50%, while Vector is synchronized and grows by 100%. ArrayList is generally preferred unless thread safety is required.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the purpose of the 'Record' type in Java 16+?",
+    "hint": "Think about immutable data classes.",
+    "answer": "Records provide a concise way to create immutable classes for storing data, automatically implementing equals(), hashCode(), and toString() methods.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between 'synchronized' method and 'synchronized' block in Java?",
+    "hint": "Consider granularity of locking.",
+    "answer": "A synchronized method locks the entire object, while a synchronized block can lock a specific object or class, providing more granular control over synchronization.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the purpose of the 'Sealed' classes in Java 17+?",
+    "hint": "Think about inheritance control.",
+    "answer": "Sealed classes restrict which classes can extend or implement them, providing more control over inheritance and improving type safety.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between 'WeakHashMap' and 'HashMap' in Java?",
+    "hint": "Consider garbage collection.",
+    "answer": "WeakHashMap uses weak references for keys, allowing them to be garbage collected when no other references exist, while HashMap uses strong references.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the purpose of the 'Pattern' and 'Matcher' classes in Java?",
+    "hint": "Think about regular expressions.",
+    "answer": "Pattern and Matcher classes provide support for regular expressions, allowing for pattern matching and text manipulation in Java applications.",
+    "level": "mid"
+  }
+] 

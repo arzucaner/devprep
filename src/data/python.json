@@ -1,0 +1,182 @@
+[
+  {
+    "question": "What is the difference between a list and a tuple in Python?",
+    "hint": "Think about mutability and use cases.",
+    "answer": "Lists are mutable (can be modified) while tuples are immutable (cannot be modified). Lists use square brackets [], tuples use parentheses ().",
+    "level": "junior"
+  },
+  {
+    "question": "What are Python decorators?",
+    "hint": "Think about function modification.",
+    "answer": "Decorators are functions that modify the behavior of other functions, allowing you to add functionality without changing the original function's code.",
+    "level": "mid"
+  },
+  {
+    "question": "Explain the concept of list comprehension in Python.",
+    "hint": "Think about concise list creation.",
+    "answer": "List comprehension is a concise way to create lists based on existing lists or other iterables, using a single line of code with a for loop and optional conditions.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the Global Interpreter Lock (GIL) in Python?",
+    "hint": "Think about thread execution.",
+    "answer": "The GIL is a mutex that protects access to Python objects, preventing multiple native threads from executing Python bytecodes simultaneously.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between 'is' and '==' in Python?",
+    "hint": "Think about identity vs equality.",
+    "answer": "'is' checks for identity (if two variables point to the same object), while '==' checks for equality (if two objects have the same value).",
+    "level": "junior"
+  },
+  {
+    "question": "What are Python generators?",
+    "hint": "Think about memory efficiency.",
+    "answer": "Generators are functions that use 'yield' to return values one at a time, allowing for memory-efficient iteration over large datasets.",
+    "level": "mid"
+  },
+  {
+    "question": "Explain the concept of context managers in Python.",
+    "hint": "Think about resource management.",
+    "answer": "Context managers (using 'with' statement) handle resource setup and cleanup automatically, ensuring proper resource management even if errors occur.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between 'deepcopy' and 'copy' in Python?",
+    "hint": "Think about nested objects.",
+    "answer": "'copy' creates a shallow copy (new object with references to nested objects), while 'deepcopy' creates a completely independent copy of the object and all nested objects.",
+    "level": "mid"
+  },
+  {
+    "question": "What are Python metaclasses?",
+    "hint": "Think about class creation.",
+    "answer": "Metaclasses are classes for classes - they define how classes are created and can modify class creation behavior.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the purpose of the '__init__' method in Python?",
+    "hint": "Think about object initialization.",
+    "answer": "The '__init__' method is a constructor that initializes a newly created object, setting up its initial state and attributes.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the difference between 'append' and 'extend' in Python lists?",
+    "hint": "Think about adding elements.",
+    "answer": "'append' adds a single element to the end of a list, while 'extend' adds all elements from an iterable to the end of the list.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the purpose of the 'async' and 'await' keywords in Python?",
+    "hint": "Think about asynchronous programming.",
+    "answer": "'async' defines an asynchronous function, and 'await' pauses execution until an asynchronous operation completes, allowing for non-blocking I/O operations.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between 'range' and 'xrange' in Python?",
+    "hint": "Think about Python 2 vs 3.",
+    "answer": "In Python 2, 'range' creates a list while 'xrange' creates a generator. In Python 3, 'range' behaves like Python 2's 'xrange'.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the purpose of the '__slots__' attribute in Python classes?",
+    "hint": "Think about memory optimization.",
+    "answer": "'__slots__' restricts the attributes that can be assigned to an instance, reducing memory usage and improving attribute access speed.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between 'staticmethod' and 'classmethod' in Python?",
+    "hint": "Think about method binding.",
+    "answer": "'staticmethod' doesn't receive any implicit first argument, while 'classmethod' receives the class as the implicit first argument.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the purpose of the 'yield from' statement in Python?",
+    "hint": "Think about generator delegation.",
+    "answer": "'yield from' delegates to a subgenerator, allowing for cleaner code when working with nested generators.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between 'pickle' and 'json' in Python?",
+    "hint": "Think about serialization formats.",
+    "answer": "'pickle' is Python-specific and can serialize any Python object, while 'json' is language-agnostic and can only serialize basic Python types.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the purpose of the 'functools' module in Python?",
+    "hint": "Think about function manipulation.",
+    "answer": "The 'functools' module provides tools for working with functions, including decorators like 'lru_cache' and 'wraps'.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between 'threading' and 'multiprocessing' in Python?",
+    "hint": "Think about GIL limitations.",
+    "answer": "'threading' uses threads (limited by GIL), while 'multiprocessing' uses separate processes (bypasses GIL) for true parallel execution.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the purpose of the 'collections' module in Python?",
+    "hint": "Think about specialized containers.",
+    "answer": "The 'collections' module provides specialized container datatypes like 'defaultdict', 'Counter', and 'namedtuple'.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between 'super()' and direct parent class calls?",
+    "hint": "Think about method resolution.",
+    "answer": "'super()' follows the Method Resolution Order (MRO), ensuring proper method resolution in multiple inheritance, while direct calls might skip some parent classes.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the purpose of the 'asyncio' module in Python?",
+    "hint": "Think about asynchronous I/O.",
+    "answer": "'asyncio' provides infrastructure for writing single-threaded concurrent code using coroutines, multiplexing I/O access over sockets and other resources.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between 'list' and 'array' in Python?",
+    "hint": "Think about data types and memory.",
+    "answer": "Lists can store different types of data and are more flexible, while arrays (from 'array' module) store homogeneous data types and are more memory-efficient.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the purpose of the 'contextlib' module in Python?",
+    "hint": "Think about context manager utilities.",
+    "answer": "'contextlib' provides utilities for working with context managers, including the '@contextmanager' decorator for creating context managers.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between 'shallow' and 'deep' copying in Python?",
+    "hint": "Think about nested objects.",
+    "answer": "Shallow copy creates a new object but references nested objects, while deep copy creates a new object and recursively copies all nested objects.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the purpose of the 'dataclasses' module in Python?",
+    "hint": "Think about class boilerplate.",
+    "answer": "'dataclasses' provides a decorator and functions for automatically adding generated special methods to classes, reducing boilerplate code.",
+    "level": "senior"
+  },
+  {
+    "question": "What is the difference between 'map' and 'filter' in Python?",
+    "hint": "Think about transformation vs selection.",
+    "answer": "'map' applies a function to all items in an iterable, while 'filter' selects items from an iterable based on a function's return value.",
+    "level": "junior"
+  },
+  {
+    "question": "What is the purpose of the 'typing' module in Python?",
+    "hint": "Think about type hints.",
+    "answer": "The 'typing' module provides support for type hints, allowing for better code documentation and static type checking.",
+    "level": "mid"
+  },
+  {
+    "question": "What is the difference between 'iterable' and 'iterator' in Python?",
+    "hint": "Think about iteration protocol.",
+    "answer": "An iterable is an object that can be iterated over, while an iterator is an object that implements the iteration protocol (__iter__ and __next__ methods).",
+    "level": "mid"
+  },
+  {
+    "question": "What is the purpose of the 'abc' module in Python?",
+    "hint": "Think about abstract base classes.",
+    "answer": "The 'abc' module provides infrastructure for defining abstract base classes, allowing for interface definition and implementation checking.",
+    "level": "senior"
+  }
+] 

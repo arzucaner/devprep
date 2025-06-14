@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What is the JVM in Java?",
+    "options": [
+      "A Java Virtual Machine that executes bytecode",
+      "A Java Version Manager",
+      "A Java Visual Machine",
+      "A Java Variable Manager"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the difference between == and .equals() in Java?",
+    "options": [
+      "They are exactly the same",
+      "== compares references, .equals() compares content",
+      "== is for numbers only, .equals() is for strings",
+      ".equals() is deprecated"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the purpose of the 'final' keyword in Java?",
+    "options": [
+      "It makes a method run faster",
+      "It prevents inheritance, overriding, or reassignment",
+      "It marks the end of a program",
+      "It creates a constant variable only"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the difference between ArrayList and LinkedList?",
+    "options": [
+      "ArrayList is faster for all operations",
+      "LinkedList is always better",
+      "ArrayList has fast random access, LinkedList has fast insertions/deletions",
+      "They are the same data structure"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the purpose of the 'static' keyword in Java?",
+    "options": [
+      "It makes a variable constant",
+      "It indicates a member belongs to the class rather than instances",
+      "It prevents garbage collection",
+      "It makes a method run in a separate thread"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the difference between checked and unchecked exceptions?",
+    "options": [
+      "Checked exceptions are always better",
+      "Unchecked exceptions must be handled at compile time",
+      "Checked exceptions must be handled at compile time, unchecked don't",
+      "They are the same type of exception"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the purpose of the 'interface' keyword in Java?",
+    "options": [
+      "It creates a new class",
+      "It defines a contract that implementing classes must follow",
+      "It makes a class abstract",
+      "It creates a new package"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the difference between 'extends' and 'implements'?",
+    "options": [
+      "They are the same",
+      "'extends' is for interfaces, 'implements' is for classes",
+      "'extends' is for class inheritance, 'implements' is for interfaces",
+      "'implements' is deprecated"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the purpose of the 'synchronized' keyword?",
+    "options": [
+      "It makes code run faster",
+      "It prevents multiple threads from executing a method simultaneously",
+      "It synchronizes data with a database",
+      "It makes a variable thread-safe only"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the difference between String, StringBuilder, and StringBuffer?",
+    "options": [
+      "They are all the same",
+      "String is mutable, StringBuilder and StringBuffer are immutable",
+      "String is immutable, StringBuilder is not thread-safe, StringBuffer is thread-safe",
+      "StringBuilder is deprecated"
+    ],
+    "answer": 2
+  }
+] 

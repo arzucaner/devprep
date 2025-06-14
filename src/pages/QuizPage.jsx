@@ -7,6 +7,8 @@ const TOPICS = [
   { label: 'React Native', value: 'react-native' },
   { label: 'TypeScript', value: 'typescript' },
   { label: 'Node.js', value: 'nodejs' },
+  { label: 'Python', value: 'python' },
+  { label: 'Java', value: 'java' },
   { label: 'HTML', value: 'html' },
   { label: 'CSS', value: 'css' },
 ];
@@ -17,6 +19,8 @@ const QUIZ_FILES = {
   'react-native': require('../data/quiz/react-native-quiz.json'),
   typescript: require('../data/quiz/typescript-quiz.json'),
   nodejs: require('../data/quiz/nodejs-quiz.json'),
+  python: require('../data/quiz/python-quiz.json'),
+  java: require('../data/quiz/java-quiz.json'),
   html: require('../data/quiz/html-quiz.json'),
   css: require('../data/quiz/css-quiz.json'),
 };

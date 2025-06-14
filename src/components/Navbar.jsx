@@ -12,6 +12,8 @@ const Navbar = () => {
     { name: 'React Native', path: '/react-native' },
     { name: 'TypeScript', path: '/typescript' },
     { name: 'Node.js', path: '/nodejs' },
+    { name: 'Python', path: '/python' },
+    { name: 'Java', path: '/java' },
     { name: 'HTML', path: '/html' },
     { name: 'CSS', path: '/css' },
   ];
